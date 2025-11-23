@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+      },
+
       colors: {
         "black": "#2C2C2C",
         "orange": "#D66349",
