@@ -28,7 +28,7 @@ export default function Loader({ progressValue = 70, onComplete }) {
                 }}
             >
                 {/* animated shimmer effect */}
-                <div className="absolute top-0 left-0 h-6 w-full rounded-full bg-white/20 animate-pulse"></div>
+                <div className="absolute top-0 left-0 h-6 w-full rounded-full bg-white/30 animate-pulse"></div>
                 <div className="absolute right-5 text-xs top-1">{progress}%</div>
             </div>
         </div>
