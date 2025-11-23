@@ -1,8 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    theme: {
-    extend: {},
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // must include all your React files
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "black": "#2C2C2C",
+        "orange": "#D66349",
+        "light-orange": "#FFA063",
+        "reddish-orange": "#FBE8DF",
+        "white-smoke": "#F5F5F5",
+        "green": "#5A6B5B",
+        "pastel-green": "#72B476",
+        "green-cyan": "#6CA78C",
+        "blue": "#65899C"
+
+      }
+    },
   },
   plugins: [],
 }
