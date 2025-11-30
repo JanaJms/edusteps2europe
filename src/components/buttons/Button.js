@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Button({
+export function Button({
   srcIcon,
   buttonText,
   disable,
