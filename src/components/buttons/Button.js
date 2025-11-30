@@ -26,7 +26,7 @@ export function Button({
     BUTTON_CONTAINER: `
         ${disable
         ? "bg-light-gray! text-grey-gravel/80! cursor-default"
-        : 'active:scale-95 cursor-pointer'}   
+        : 'active:scale-85 cursor-pointer'}   
             flex justify-center items-center px-4 py-2 rounded-lg transition-all duration-500 ease-in-out min-w-fit gap-2
             ${customizeStyle} `,
     IMAGE: " w-5 h-5 shrink-0",
