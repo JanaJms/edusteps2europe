@@ -12,7 +12,7 @@ module.exports = {
 
       colors: {
         "body-color": "#F9F8F6",
-        "black": "#2C2C2C",
+        "black-metal": "#2C2C2C",
         "orange": "#D66349",
         "light-orange": "#FFA063",
         "reddish-orange": "#FBE8DF",
