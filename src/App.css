@@ -4,6 +4,7 @@
   height: 100%;
   display: flex;
   justify-content: center;  /* optional: center content horizontally */
-  align-items: center;      /* optional: center content vertically */
+  align-items: start;      /* optional: center content vertically */
   background-color: #F9F8F6; /* change background color if you want */
+  color: #2c2c2c;
 }
