@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import ComingSoon from './Views/ComingSoon';
-import HeroSection from './components/views/home/HeroSection';
+import Home from './Views/Home';
 
 function App() {
   return (
     <div className="App w-full min-h-screen">
-      <HeroSection />
+      <Home />
     </div>
   );
 }
