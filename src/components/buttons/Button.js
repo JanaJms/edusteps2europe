@@ -7,8 +7,7 @@ export function Button({
   customizeStyle,
   onClickDisable,
   onClick,
-  textStyle,
-  textSize
+  textStyle
 }) {
   const [isShowOption, setIsShowOption] = useState(false);
 
@@ -27,7 +26,8 @@ export function Button({
         ${disable
         ? "bg-light-gray! text-grey-gravel/80! cursor-default"
         : 'active:scale-85 cursor-pointer'}   
-            flex justify-center items-center px-4 py-2 rounded-lg transition-all duration-500 ease-in-out min-w-fit gap-2
+            flex justify-center items-center rounded-lg transition-all duration-500 ease-in-out min-w-fit gap-2
+            px-2 py-1 text-[10px] lg:px-4 lg:py-2 lg:text-base
             ${customizeStyle} `,
     IMAGE: " w-5 h-5 shrink-0",
   }
@@ -46,7 +46,6 @@ export function Button({
       )}
       {buttonText && <p
         className={textStyle}
-        style={{ fontSize: textSize ?? '16px' }}
       >
         {buttonText}
       </p>}

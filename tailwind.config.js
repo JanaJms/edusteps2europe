@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // must include all your React files
   ],
   theme: {
+    ringWidth: {
+      DEFAULT: '0px'
+    },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
