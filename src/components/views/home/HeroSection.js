@@ -41,7 +41,6 @@ export default function HeroSection() {
                 className={classStyles.IMAGE}
                 src={src}
                 alt="Hero"
-                fill
                 style={{ objectFit: 'cover' }}
             />
 
