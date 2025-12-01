@@ -18,6 +18,7 @@ module.exports = {
         "black-metal": "#2C2C2C",
         "orange": "#D66349",
         "light-orange": "#FFA063",
+        "whishkey-orange": "#D9966E",
         "reddish-orange": "#FBE8DF",
         "white-smoke": "#F5F5F5",
         "green": "#5A6B5B",
