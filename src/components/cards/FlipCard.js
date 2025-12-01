@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FlipCard({ FrontCard, BackCard }) {
     return (
-        <div className="group w-64 h-40 [perspective:1000px]">
+        <div className="group h-[160px] w-[240px] md:w-[300px] md:h-[210px] [perspective:1000px]">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
 
                 {/* <!-- Front --> */}
