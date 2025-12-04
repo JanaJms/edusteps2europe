@@ -1,9 +1,9 @@
-import img1 from "../../../assets/images/icons8-world-markets-100.png"
+import img1 from "../../../assets/images/icons8-compass-100.png"
 import img2 from "../../../assets/images/icons8-handshake-100.png"
 import img3 from "../../../assets/images/icons8-support-100.png"
 import img4 from "../../../assets/images/icons8-world-markets-100.png"
 import img5 from "../../../assets/images/icons8-cheap-100.png"
-import img6 from "../../../assets/images/icons8-compass-100.png"
+import img6 from "../../../assets/images/icons8-shield-100.png"
 import FlipCard from "../../cards/FlipCard"
 
 export default function WhyUs() {
@@ -51,7 +51,7 @@ export default function WhyUs() {
         <div className='flex flex-col justify-center items-center p-10 lg:p-20 gap-8 text-center'>
             <div className='font-playfair text-[22px] md:text-[30px] lg:text-[44px] font-semibold'>Why choose EDUSTEPS2EUROPE? </div>
             <div className='w-[65vw] text-[12px] md:text-[16px]'>We help you identify the right university and program, guide you through the application process, and assist with housing, insurance, and other essentials.</div>
-            <div className='flex flex-wrap items-center justify-center gap-4 py-5 md:gap-10 md:py-10 lg:py-16'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 flex-wrap items-center justify-center gap-4 py-3 md:gap-10 md:py-5 lg:py-8'>
                 {data.map((el) => (
                     <FlipCard
                         key={el.id}
