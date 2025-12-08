@@ -48,7 +48,7 @@ export default function WhyUs() {
     ]
 
     return (
-        <div className='flex flex-col justify-center items-center p-10 lg:p-20 gap-8 text-center'>
+        <div className='flex flex-col justify-center items-center px-10 lg:px-20 gap-8 text-center'>
             <div className='font-playfair text-[22px] md:text-[30px] lg:text-[44px] font-semibold'>Why choose EDUSTEPS2EUROPE? </div>
             <div className='w-[65vw] text-[12px] md:text-[16px]'>We help you identify the right university and program, guide you through the application process, and assist with housing, insurance, and other essentials.</div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 flex-wrap items-center justify-center gap-4 py-3 md:gap-10 md:py-5 lg:py-8'>
