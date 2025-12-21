@@ -3,6 +3,7 @@ import HeroSection from '../components/views/home/HeroSection'
 import WhyUs from '../components/views/home/WhyUs'
 import DownloadGuide from '../components/views/home/DownloadGuide'
 import JourneySection from '../components/views/home/JourneySection'
+import SuccessSection from '../components/views/home/SuccessSection'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <WhyUs/>
       <DownloadGuide/>
       <JourneySection/>
+      <SuccessSection/>
     </div>
   )
 }
