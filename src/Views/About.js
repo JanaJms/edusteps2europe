@@ -3,6 +3,7 @@ import Hero from '../components/views/about/Hero'
 import Vision from '../components/views/about/Vision'
 import Mission from '../components/views/about/Mission'
 import Values from '../components/views/about/Values'
+import Question from '../components/views/about/Question'
 
 export default function About() {
     return (
@@ -11,6 +12,7 @@ export default function About() {
             <Vision />
             <Mission />
             <Values />
+            <Question/>
         </div>
     )
 }
