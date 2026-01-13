@@ -6,7 +6,7 @@ export default function HeroFAQ() {
         <section
             className="relative h-[90vh] w-full overflow-hidden flex justify-between bg-[#7BAFCB]/30"
             style={{
-                clipPath: 'ellipse(120% 85% at 50% 0%)',
+                clipPath: 'ellipse(80% 98% at 50% 0%)',
                 WebkitClipPath: 'ellipse(120% 85% at 50% 0%)',
             }}
         >
