@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App w-full min-h-screen">
       <Routes>
-        <Route path="/" element={<Outlet />}>
+        <Route path="/">
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
