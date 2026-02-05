@@ -89,7 +89,7 @@ export default function Navbar({ customStyle, navStyle }) {
     );
 }
 
-function BurgerMenu({ menuData, activePage, setActivePage }) {
+function BurgerMenu({ menuData, isActive }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -120,10 +120,9 @@ function BurgerMenu({ menuData, activePage, setActivePage }) {
                         {menuData.map((item, index) => (
                             <div
                                 key={index}
-                                className={`${activePage === item.id ? "text-purple" : "text-black-metal "} p-4 relative overflow-hidden group cursor-pointer`}
+                                className={`${isActive(item) ? "text-orange" : "text-black-metal "} p-4 relative overflow-hidden group cursor-pointer`}
                                 onClick={() => {
                                     setIsOpen(false);
-                                    setActivePage(item?.id)
                                 }}
                             >
                                 <a
@@ -134,7 +133,7 @@ function BurgerMenu({ menuData, activePage, setActivePage }) {
                                 </a>
                                 <div
                                     className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm"
-                                    style={{ background: "linear-gradient(135deg, #d66349, #fbe8df)" }}
+                                    style={{ background: "linear-gradient(135deg, #fbe8df, #d66349)" }}
                                 />
                             </div>
                         ))}
