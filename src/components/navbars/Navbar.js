@@ -118,24 +118,21 @@ function BurgerMenu({ menuData, isActive }) {
                     </div>
                     <div className={` flex flex-col px-4 py-8 divide-y divide-[#bbb8c3]`}>
                         {menuData.map((item, index) => (
-                            <div
+                            <a
                                 key={index}
-                                className={`${isActive(item) ? "text-orange" : "text-black-metal "} p-4 relative overflow-hidden group cursor-pointer`}
+                                className={`${isActive(item) ? "text-orange" : "text-black-metal "} z-10  p-4 relative overflow-hidden group cursor-pointer`}
                                 onClick={() => {
                                     setIsOpen(false);
                                 }}
+                                href={`${item.link}`}
                             >
-                                <a
-                                    className="relative z-10"
-                                    href={`${item.link}`}
-                                >
-                                    {item.label}
-                                </a>
+
+                                {item.label}
                                 <div
-                                    className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm"
+                                    className="absolute inset-0 z-0 opacity-0 group-hover:opacity-60 transition-opacity duration-500 backdrop-blur-sm"
                                     style={{ background: "linear-gradient(135deg, #fbe8df, #d66349)" }}
                                 />
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
