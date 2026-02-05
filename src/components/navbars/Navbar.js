@@ -107,7 +107,7 @@ function BurgerMenu({ menuData, activePage, setActivePage }) {
                         }`}
                 />
                 <div
-                    className={` absolute p-4 top-0 right-0 z-50 h-screen w-[90vw] bg-[#141415]  transform transition-transform duration-300  ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+                    className={` absolute p-4 top-0 right-0 z-50 h-screen w-[90vw] bg-reddish-orange transform transition-transform duration-300  ${isOpen ? "translate-x-0" : "translate-x-full"}`}
                 >
                     <div onClick={() => setIsOpen(false)} className="cursor-pointer">
                         <X
@@ -120,7 +120,7 @@ function BurgerMenu({ menuData, activePage, setActivePage }) {
                         {menuData.map((item, index) => (
                             <div
                                 key={index}
-                                className={`${activePage === item.id ? "text-purple" : "text-white "} p-4 relative overflow-hidden group cursor-pointer`}
+                                className={`${activePage === item.id ? "text-purple" : "text-black-metal "} p-4 relative overflow-hidden group cursor-pointer`}
                                 onClick={() => {
                                     setIsOpen(false);
                                     setActivePage(item?.id)
@@ -134,7 +134,7 @@ function BurgerMenu({ menuData, activePage, setActivePage }) {
                                 </a>
                                 <div
                                     className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-sm"
-                                    style={{ background: "linear-gradient(135deg, #7d0485, #121213)" }}
+                                    style={{ background: "linear-gradient(135deg, #d66349, #fbe8df)" }}
                                 />
                             </div>
                         ))}
