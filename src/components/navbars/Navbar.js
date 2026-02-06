@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from "react";
-import logo from "../../assets/images/Foto jovem gerente feminina feliz segura….jpeg";
+import logo from "../../assets/images/logo.png";
+import logoVideo from "../../assets/images/logoVideo.mp4"
 import { MenuIcon, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
@@ -30,9 +31,9 @@ export default function Navbar({ customStyle, navStyle }) {
     }, []);
 
     const classStyles = {
-        HEADER: `px-5 sm:px-8 lg:px-16 w-full py-3 flex items-center justify-between ${customStyle} absolute top-0 left-0 z-20 `,
+        HEADER: `px-5 sm:px-8 lg:px-16 w-full py-2 flex items-center justify-between ${customStyle} absolute top-0 left-0 z-20 `,
         LOGO_COMP: "flex items-center space-x-2",
-        LOGO: "w-24 h-[68px] lg:w-[140px] lg:h-[98px] cursor-pointer",
+        LOGO: "w-24 lg:w-[140px] cursor-pointer",
         NAVBAR: `md:p-5 md:gap-4 lg:p-6 lg:gap-10 z-100 min-w-max inline-flex justify-center items-center ${navStyle}`,
         LINK: "md:text-base lg:text-lg leading-7 min-w-fit font-medium text-center text-black-metal hover:text-orange/70 transition-all duration-400 ease-in-out",
         ACTIVE_LINK: "!text-orange",
@@ -42,13 +43,26 @@ export default function Navbar({ customStyle, navStyle }) {
         <header className={classStyles.HEADER}>
             <div className={classStyles.LOGO_COMP}>
                 <a href="/">
-                    <img
-                        src={logo}
-                        alt="Logo"
-                        width={140}   // max width from lg:w-[140px]
-                        height={98}   // max height from lg:h-[98px]
-                        className={classStyles.LOGO}
-                    />
+                    {
+                        isActive({ link: '/' }) ?
+                            (
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    src={logoVideo}
+                                    alt="Logo"
+                                    className={classStyles.LOGO} />
+                            )
+                            :
+                            (<img
+                                src={logo}
+                                alt="Logo"
+                                className={classStyles.LOGO}
+                            />)
+                    }
+
                 </a>
             </div>
 
