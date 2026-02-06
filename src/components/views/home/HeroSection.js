@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import bgHeroImage from "../../../assets/images/hero.jpg"
+import bgHeroImage from "../../../assets/images/homeBg.png"
 import bgHeroImageSm from "../../../assets/images/hero-sm.png"
 import Button from '../../buttons/Button';
+import { chatOnWhatsapp } from '../../../utils/utils';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
 
     const [src, setSrc] = useState(bgHeroImage);
+    const navigate = useNavigate()
 
     useEffect(() => {
         const update = () => {
@@ -19,8 +22,8 @@ export default function HeroSection() {
     }, []);
 
     const classStyles = {
-        COMPONENT: " h-[332px] sm:h-[55vh] md:h-[80dvh] text-light-gray  min-h-fit w-full relative overflow-hidden z-[2]",
-        IMAGE: "absolute w-full h-full object-cover object-left lg:object-right-bottom ",
+        COMPONENT: " h-[332px] sm:h-[55vh] md:h-[90dvh] text-light-gray  min-h-fit w-full relative overflow-hidden z-[2]",
+        IMAGE: "absolute w-full h-full object-cover object-left lg:object-left ",
         ANIMATED_COMP: "flex flex-col gap-y-5",
         CONTAINER: " w-[90%] sm:w-full bottom-[10px] left-6 md:left-8 md:bottom-[40px] lg:bottom-[35px] lg:left-[55px] 2xl:bottom-4 2xl:left-14 z-[3] absolute items-start flex flex-col gap-y-3.5",
         TEXT_COMP: "max-w-[238px] sm:max-w-[400px] md:max-w-[43%]",
@@ -52,10 +55,12 @@ export default function HeroSection() {
                         </h1>
                         <h2 className={classStyles.BTNS}>
                             <Button
+                                onClick={() => chatOnWhatsapp()}
                                 customizeStyle={classStyles.PRIMARY_BTN}
                                 buttonText={`Book Free Consultation`} />
 
                             <Button
+                                onClick={() => { navigate("faq") }}
                                 customizeStyle={classStyles.SECONDARY_BTN}
                                 buttonText={`See How It Works`} />
                         </h2>

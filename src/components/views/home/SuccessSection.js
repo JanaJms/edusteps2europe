@@ -2,6 +2,7 @@ import React from 'react'
 import GlassCard from '../../cards/GlassCard'
 import circle from '../../../assets/images/gradient-circle.png'
 import Button from '../../buttons/Button'
+import { chatOnWhatsapp } from '../../../utils/utils'
 
 export default function SuccessSection() {
     return (
@@ -27,9 +28,11 @@ export default function SuccessSection() {
                     <div className='flex flex-row gap-5 items-center'>
 
                         <Button
+                            onClick={chatOnWhatsapp}
                             customizeStyle={`bg-light-orange text-white-smoke`}
                             buttonText={`Book Free Consultation`} />
                         <a
+                            href='/packages'
                             className={`text-start text-orange underline font-bold cursor-pointer !px-0 text-[8px] md:text-sm`}>
                             Or Request a Custom Package
                         </a>

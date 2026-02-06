@@ -1,5 +1,6 @@
 import ArrowRightCircle from '../../../assets/images/Arrow right-circle.png'
 import freeCall from '../../../assets/images/freeCall.png'
+import { chatOnWhatsapp } from '../../../utils/utils'
 
 export default function BookCall() {
     return (
@@ -9,7 +10,10 @@ export default function BookCall() {
                     <div className='text-[64px] font-playfair font-semibold leading-tight'>
                         Book a Free Call with Our Experts
                     </div>
-                    <img src={ArrowRightCircle} className='size-28 shrink-0 font-thin' />
+                    <img
+                        onClick={chatOnWhatsapp}
+                        src={ArrowRightCircle}
+                        className=' cursor-pointer size-28 shrink-0 font-thin' />
                 </div>
                 <div>
                     <img src={freeCall} />
