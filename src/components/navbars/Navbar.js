@@ -10,7 +10,7 @@ export default function Navbar({ customStyle, navStyle }) {
         { id: "home", label: "Home", link: "/" },
         { id: "about", label: "About", link: "/about" },
         { id: "services", label: "Services", link: "/services" },
-        { id: "packages", label: "Packages", link: "/packages" },
+        // { id: "packages", label: "Packages", link: "/packages" },
         { id: "faq", label: "FAQ", link: "/faq" },
         { id: "contact", label: "Contact", link: "/contact" }
     ];
