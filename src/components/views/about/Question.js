@@ -1,6 +1,7 @@
 import React from 'react'
 import img from "../../../assets/images/qst.png"
 import Button from '../../buttons/Button'
+import { chatOnWhatsapp } from '../../../utils/utils'
 
 export default function Question() {
     return (
@@ -11,11 +12,12 @@ export default function Question() {
                     Ask someone who’s <span className='text-orange'>lived</span> it.
                 </div>
                 <div className='w-3/4 pb-10'>
-                    Our alumni ambassadors are students just like your child — from your region, studying in France now.<br/>
-                    They’ve gone through the same application steps, moved abroad, and are building their future.<br/>
+                    Our alumni ambassadors are students just like your child — from your region, studying in France now.<br />
+                    They’ve gone through the same application steps, moved abroad, and are building their future.<br />
                     Ask them what it's really like — housing, classes, choosing a city, making friends, anything.
                 </div>
                 <Button
+                    onClick={chatOnWhatsapp}
                     customizeStyle={`bg-light-orange text-white-smoke !w-fit`}
                     buttonText={`Book a call with an EDUSTESP2EUROPE alumni`} />
             </div>
