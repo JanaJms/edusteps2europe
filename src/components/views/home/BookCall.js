@@ -5,12 +5,23 @@ import { chatOnWhatsapp } from '../../../utils/utils'
 
 export default function BookCall() {
     return (
-        <section className='w-full px-6 md:px-10 lg:px-20 py-20 lg:py-32'>
-            {/* Main Container with Gradient */}
-            <div className='relative bg-[#0F3D3E] rounded-[40px] md:rounded-[60px] p-8 md:p-16 lg:p-20 overflow-visible flex flex-col lg:flex-row items-center justify-between shadow-2xl'>
+        /* 
+           FIX 1: overflow-x-hidden on the section ensures that anything 
+           bleeding out (like the glow or the image) doesn't cause a scrollbar.
+        */
+        <section className='w-full px-6 md:px-10 lg:px-20 py-20 lg:py-32 overflow-x-hidden'>
+            
+            {/* 
+                FIX 2: The box itself must be overflow-visible 
+                so the image can pop out vertically. 
+            */}
+            <div className='relative bg-[#0F3D3E] rounded-[40px] md:rounded-[60px] p-8 md:p-16 lg:p-20 flex flex-col lg:flex-row items-center justify-between shadow-2xl overflow-visible'>
                 
-                {/* Background Decoration (Subtle Glow) */}
-                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-64 h-64 bg-[#5FA78D] opacity-20 blur-[100px] pointer-events-none"></div>
+                {/* 
+                    FIX 3: Glow contained. By using a smaller width or 
+                    ensuring the parent section clips it. 
+                */}
+                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-64 h-64 bg-[#5FA78D] opacity-20 blur-[100px] pointer-events-none z-0"></div>
 
                 {/* Left Side: Content */}
                 <div className='w-full lg:w-[55%] z-10 text-center lg:text-left'>
@@ -19,7 +30,7 @@ export default function BookCall() {
                         <span>Available for a 15-min chat</span>
                     </div>
 
-                    <h2 className='text-[36px] md:text-[52px] lg:text-[64px] font-playfair font-bold leading-[1.1] text-white mb-8'>
+                    <h2 className='text-[32px] md:text-[52px] lg:text-[64px] font-playfair font-bold leading-[1.1] text-white mb-8'>
                         Book a Free Call with <br className='hidden md:block'/> 
                         Our Experts
                     </h2>
@@ -35,14 +46,18 @@ export default function BookCall() {
                     </button>
                 </div>
 
-                {/* Right Side: Illustration (Popping Out) */}
-                <div className='relative w-full lg:w-[40%] flex justify-center mt-12 lg:mt-0'>
-                    {/* This div allows the image to overflow the container on desktop */}
-                    <div className='lg:absolute lg:bottom-[-80px] lg:right-0 lg:w-[130%]'>
+                {/* Right Side: Illustration */}
+                <div className='relative w-full lg:w-[40%] flex justify-center mt-12 lg:mt-0 z-10'>
+                    {/* 
+                        FIX 4: Removed lg:w-[130%] which was forcing the container too wide.
+                        Used lg:-mb-32 to pop out the bottom, and lg:scale-125 
+                        to make it large without breaking the horizontal layout.
+                    */}
+                    <div className='lg:-mb-32 lg:mr-[-20px] xl:mr-[-40px] transform lg:scale-125 transition-transform duration-500'>
                         <img 
                             src={freeCall} 
                             alt="Expert Consultation" 
-                            className='w-full max-w-[320px] md:max-w-[450px] lg:max-w-none h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform lg:scale-110'
+                            className='w-full max-w-[300px] md:max-w-[400px] lg:max-w-none h-auto drop-shadow-[-20px_20px_50px_rgba(0,0,0,0.4)]'
                         />
                     </div>
                 </div>
