@@ -85,18 +85,37 @@ export default function JourneySection() {
                 How it works
             </div>
             <div className='px-5 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                {
-                    steps.map((step, index) => (
+                {steps.map((step, index) => {
+                    const isEven = index % 2 === 0;
+
+                    return (
                         <div
-                            className='flex items-center gap-2 lg:gap-5 font-poppins'
-                            key={step?.id}>
-                            <TextMask text={`0${index + 1}`} image={step?.img} classStyle={`w-1/2`}/>
-                            <div className='w-1/2 flex flex-col items-start justify-center h-full gap-1 lg:gap-3'>
-                                <div className='text-[14px] md:text-[20px] font-medium'>{step?.title}</div>
-                                <div className='text-[12px] md:text-[16px] '>{step?.subtitle}</div>
+                            key={step?.id}
+                            className={`flex items-center gap-2 lg:gap-5 font-poppins  ${isEven ? 'flex-row' : 'flex-row-reverse sm:flex-row'
+                                }`}
+                        >
+                            {/* Image/Mask Side */}
+                            <div className="w-1/2 flex justify-center">
+                                <TextMask
+                                    text={`0${index + 1}`}
+                                    image={step?.img}
+                                    classStyle="w-full"
+                                />
+                            </div>
+
+                            {/* Text Content Side */}
+                            <div className={`w-1/2 flex flex-col justify-center gap-2 lg:gap-4 ${isEven ? 'items-start text-left' : 'items-end text-right sm:items-start sm:text-left'
+                                }`}>
+                                <h3 className="text-[16px] md:text-[24px] lg:text-[36px] font-semibold leading-tight">
+                                    {step?.title}
+                                </h3>
+                                <p className="text-[12px] md:text-[16px] lg:text-[18px] text-gray-600 max-w-sm">
+                                    {step?.subtitle}
+                                </p>
                             </div>
                         </div>
-                    ))
+                    );
+                })
                 }
             </div>
 
