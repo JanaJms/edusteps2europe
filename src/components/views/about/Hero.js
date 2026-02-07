@@ -20,10 +20,10 @@ export default function Hero() {
 
                 {/* Text content */}
                 <div className="relative z-10 text-center flex flex-col gap-6 md:gap-10 px-6 md:px-16 max-w-4xl pt-10 pb-20">
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-playfair drop-shadow-md">
+                    <h1 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-md">
                         About us
                     </h1>
-                    <p className="text-sm md:text-lg lg:text-xl leading-relaxed drop-shadow-sm font-poppins">
+                    <p className="text-base md:text-lgleading-relaxed drop-shadow-sm font-poppins">
                         We know that sending your child to study in another country is a big decision, 
                         full of excitement, but also uncertainty.
                         <span className="block mt-4 md:mt-6">
