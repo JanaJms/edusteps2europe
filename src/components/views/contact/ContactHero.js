@@ -3,7 +3,7 @@ import img from '../../../assets/images/contactHero.png'
 
 export default function ContactHero() {
     return (
-        <section className="relative min-h-[70vh] lg:h-[80vh] w-full overflow-hidden bg-[#D9966E]/20 flex flex-col lg:flex-row items-center justify-between">
+        <section className="relative min-h-[60vh] lg:h-[80vh] w-full overflow-hidden bg-[#D9966E]/20 flex flex-col lg:flex-row items-center justify-between">
             
             {/* Text Content */}
             <div className="relative z-10 w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-16 lg:pl-20 pt-20 lg:pt-0 gap-6 md:gap-8 text-center lg:text-left">

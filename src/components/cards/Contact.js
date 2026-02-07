@@ -4,6 +4,7 @@ export function Card({
     children,
     className = '',
     variant = 'default',
+    onClick,
 }) {
     const variantStyles = {
         default: 'bg-white border border-grey-goose shadow-[0_4px_10px_0_rgba(0,0,0,0.25)]',
@@ -12,6 +13,7 @@ export function Card({
 
     return (
         <div
+            onClick={onClick}
             className={`rounded-lg p-6 ${variantStyles[variant]} ${className}`}
         >
             {children}
@@ -24,13 +26,15 @@ export function InfoCard({
     title,
     value,
     className = '',
+    onClick,
 }) {
     return (
         <Card
+            onClick={onClick}
             className={`flex flex-col items-center justify-center text-center gap-4 h-[250px] ${className}`}
         >
             <div className="text-orange">
-                <img src={icon} className='size-8'/>
+                <img src={icon} className='size-8' />
             </div>
 
             <div className="flex flex-col gap-1">
