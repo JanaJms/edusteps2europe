@@ -11,6 +11,7 @@ export default function Navbar({ customStyle, navStyle }) {
         { id: "about", label: "About", link: "/about" },
         { id: "services", label: "Services", link: "/services" },
         // { id: "packages", label: "Packages", link: "/packages" },
+        { id: "apartments", label: "Apartments", link: "/appartments" },
         { id: "faq", label: "FAQ", link: "/faq" },
         { id: "contact", label: "Contact", link: "/contact" }
     ];
