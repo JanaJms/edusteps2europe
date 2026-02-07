@@ -24,7 +24,7 @@ export default function Promo() {
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-4 font-poppins font-medium w-full sm:w-auto">
                             <Button
-                                onClick={() => { navigate("/packages") }}
+                                // onClick={() => { navigate("/packages") }}
                                 customizeStyle="bg-[#ffa66b] text-white px-8 py-4 rounded-xl shadow-md hover:bg-[#f89552] transition-all w-full sm:w-auto text-center"
                                 buttonText="Compare Packages"
                             />
