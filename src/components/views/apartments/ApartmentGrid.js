@@ -1,157 +1,117 @@
 import React, { useState } from 'react'
-import { MapPin, DollarSign } from 'lucide-react';
+import { MapPin, Maximize, Bed, Bath, ArrowRight } from 'lucide-react';
 import ImageWithFallback from '../../cards/ImageWithFallback';
 import ApartmentModal from './ApartmentModal';
 import Button from '../../buttons/Button';
 
-export default function ApartmentGrid({ }) {
+export default function ApartmentGrid() {
     const [selectedApartment, setSelectedApartment] = useState(null);
 
     const apartments = [
         {
             id: 1,
-            title: 'Modern Studio near University',
-            location: 'Downtown Boston',
-            priceRange: '$1,200 - $1,500/mo',
-            image: 'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'A beautiful modern studio apartment located just 5 minutes from the university campus. Perfect for students who want to be close to classes while enjoying a comfortable living space.',
+            title: 'Furnished Studio',
+            location: 'Boulogne Billancourt - Ouest Paris vers porte Saint cloud Rue Émile Landrin - Métro Marcel Sembat ligne 9 (2 minutes)',
+            price: '920',
+            image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=1000',
+            description: "Very well-designed and functional furnished studio located on the second floor of an old town-house style building...",
             bedrooms: 1,
             bathrooms: 1,
-            size: '450 sq ft',
+            size: '17',
             availability: 'Available Now',
-            amenities: ['WiFi Included', 'Fully Furnished', 'Utilities Included', 'Near Public Transit', 'Laundry in Building', 'Security System'],
-        },
-        {
-            id: 2,
-            title: 'Shared Student Housing',
-            location: 'Cambridge',
-            priceRange: '$800 - $1,000/mo',
-            image: 'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-                'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'Affordable shared housing option with fellow international students. Great for networking and making friends while keeping costs down. Each bedroom is private with shared common areas.',
-            bedrooms: 1,
-            bathrooms: 1,
-            size: '350 sq ft',
-            availability: 'Available Feb 1',
-            amenities: ['WiFi Included', 'Furnished Room', 'Shared Kitchen', 'Study Room', 'Cleaning Service', 'All Utilities Included'],
-        },
-        {
-            id: 3,
-            title: 'Luxury 1-Bedroom Apartment',
-            location: 'Back Bay',
-            priceRange: '$2,000 - $2,500/mo',
-            image: 'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'Premium living space in one of Boston\'s most prestigious neighborhoods. Features modern amenities, high-end finishes, and stunning city views. Perfect for graduate students or those seeking upscale accommodation.',
-            bedrooms: 1,
-            bathrooms: 1,
-            size: '650 sq ft',
-            availability: 'Available March 1',
-            amenities: ['High-Speed WiFi', 'Fully Furnished', 'Gym Access', 'Concierge Service', 'Parking Included', 'Pet Friendly'],
-        },
-        {
-            id: 4,
-            title: 'Cozy Studio with Garden View',
-            location: 'Brookline',
-            priceRange: '$1,100 - $1,300/mo',
-            image: 'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'A peaceful studio apartment overlooking a beautiful garden. Located in a quiet residential area with easy access to public transportation and local amenities.',
-            bedrooms: 1,
-            bathrooms: 1,
-            size: '400 sq ft',
-            availability: 'Available Now',
-            amenities: ['WiFi Ready', 'Furnished', 'Garden Access', 'Near Metro', 'Quiet Neighborhood', 'Storage Space'],
-        },
-        {
-            id: 5,
-            title: '2-Bedroom Family Apartment',
-            location: 'Somerville',
-            priceRange: '$1,800 - $2,200/mo',
-            image: 'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1594873604892-b599f847e859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjkwMjMxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'Spacious 2-bedroom apartment ideal for students with families or those who want extra space. Features a modern kitchen, large living area, and plenty of natural light.',
-            bedrooms: 2,
-            bathrooms: 2,
-            size: '900 sq ft',
-            availability: 'Available April 1',
-            amenities: ['High-Speed WiFi', 'Furnished Option', 'Dishwasher', 'Parking Available', 'Playground Nearby', 'Storage Unit'],
-        },
-        {
-            id: 6,
-            title: 'Budget-Friendly Student Room',
-            location: 'Allston',
-            priceRange: '$700 - $900/mo',
-            image: 'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            images: [
-                'https://images.unsplash.com/photo-1635933036183-d1f250072745?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjaXR5JTIwYXBhcnRtZW50fGVufDF8fHx8MTc2OTAwMjU5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-            ],
-            description: 'Affordable private room in a student-friendly neighborhood. Great value for money with all essential amenities included. Perfect for budget-conscious students.',
-            bedrooms: 1,
-            bathrooms: 1,
-            size: '300 sq ft',
-            availability: 'Available Now',
-            amenities: ['WiFi Included', 'Basic Furniture', 'Shared Kitchen', 'Near Bus Stop', 'Utilities Included', 'Flexible Lease'],
-        },
-    ];
+            amenities: [
+                'WiFi Included',
+                'Fully Furnished',
+                'Utilities Included',
+                "Electricity subscription included",
+                "APL eligible",
+                "Second floor",
+                "Near metro"]
+        }
+    ]
 
     return (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {apartments.map((apartment) => (
-                    <div
-                        key={apartment.id}
-                        className="rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer"
-                    >
-                        <div className="h-56 overflow-hidden">
-                            <ImageWithFallback
-                                src={apartment.image}
-                                alt={apartment.title}
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            />
-                        </div>
+        <section className="bg-body-color py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+                {/* Section Header */}
+                <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-playfair font-bold text-black-metal">
+                            Available Accommodations
+                        </h2>
+                        <p className="text-green mt-2">Quality student housing vetted for comfort and proximity.</p>
+                    </div>
+                    <div className="h-[2px] flex-grow mx-8 bg-grey-goose/20 hidden md:block mb-4"></div>
+                </div>
 
-                        <div className="p-6">
-                            <h3
-                                className="text-xl mb-3 font-playfair "
-                            >
-                                {apartment.title}
-                            </h3>
-
-                            <div className="space-y-2 mb-4">
-                                <div className="flex items-center gap-2">
-                                    <MapPin size={18} className='text-orange' />
-                                    <span className="text-sm text-green">{apartment.location}</span>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    {apartments.map((apartment) => (
+                        <div
+                            key={apartment.id}
+                            className="group rounded-3xl bg-white border border-transparent hover:border-orange/20 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col"
+                            onClick={() => setSelectedApartment(apartment)}
+                        >
+                            {/* Image Container */}
+                            <div className="relative aspect-[4/3] overflow-hidden">
+                                <ImageWithFallback
+                                    src={apartment.image}
+                                    alt={apartment.title}
+                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                                {/* Price Tag */}
+                                <div className="absolute bottom-4 left-4 bg-black-metal text-white px-4 py-2 rounded-xl font-bold">
+                                    €{apartment.price}<span className="text-xs font-normal opacity-80">/mo</span>
                                 </div>
-                                <div className="flex items-center gap-2">
-                                    <DollarSign size={18} className='text-orange' />
-                                    <span className="text-sm text-green">{apartment.priceRange}</span>
+                                {/* Status Badge */}
+                                <div className="absolute top-4 right-4 bg-pastel-green/90 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                    {apartment.availability}
                                 </div>
                             </div>
-                            <Button
-                                onClick={() => setSelectedApartment(apartment)}
-                                customizeStyle={`bg-orange text-white w-full py-3 hover:opacity-90`}
-                                buttonText={`View Details`} />
 
+                            {/* Content */}
+                            <div className="p-6 flex flex-col flex-grow">
+                                <h3 className="text-2xl font-playfair font-bold text-black-metal mb-2 group-hover:text-orange transition-colors">
+                                    {apartment.title}
+                                </h3>
+
+                                <div className="flex items-start gap-2 mb-4 h-10">
+                                    <MapPin size={16} className='text-orange shrink-0 mt-1' />
+                                    <span className="text-sm text-green line-clamp-2 leading-tight">
+                                        {apartment.location}
+                                    </span>
+                                </div>
+
+                                {/* Specs Bar */}
+                                <div className="flex items-center justify-between py-4 border-y border-white-smoke mb-6">
+                                    <div className="flex items-center gap-2 text-black-metal/70">
+                                        <Maximize size={16} className="text-whishkey-orange" />
+                                        <span className="text-sm font-medium">{apartment.size} m²</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-black-metal/70">
+                                        <Bed size={16} className="text-whishkey-orange" />
+                                        <span className="text-sm font-medium">{apartment.bedrooms} Bed</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-black-metal/70">
+                                        <Bath size={16} className="text-whishkey-orange" />
+                                        <span className="text-sm font-medium">{apartment.bathrooms} Bath</span>
+                                    </div>
+                                </div>
+
+                                {/* Action */}
+                                <div className="mt-auto">
+                                    <button
+                                        className="w-full bg-white-smoke text-black-metal group-hover:bg-orange group-hover:text-white py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2"
+                                    >
+                                        View Details
+                                        <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
+
             {/* Modal */}
             {selectedApartment && (
                 <ApartmentModal
@@ -159,7 +119,6 @@ export default function ApartmentGrid({ }) {
                     onClose={() => setSelectedApartment(null)}
                 />
             )}
-
         </section>
     )
 }
