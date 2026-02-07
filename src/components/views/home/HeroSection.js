@@ -31,7 +31,7 @@ export default function HeroSection() {
         BTNS: " flex gap-x-5 font-poppins font-medium text-xs md:text-base",
         PRIMARY_BTN: "bg-light-orange text-white-smoke",
         SECONDARY_BTN: `text-blue bg-grey-goose`,
-        LINK: 'text-start text-grey-goose underline font-bold cursor-pointer !px-0 text-[8px] md:text-sm'
+        LINK: 'text-start text-blue underline font-bold cursor-pointer !px-0 text-[8px] md:text-sm'
     }
 
     return (
