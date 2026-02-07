@@ -1,54 +1,51 @@
 import { ArrowRight } from 'lucide-react';
-import React from 'react'
 import Button from '../../buttons/Button';
+import { chatOnWhatsapp } from '../../../utils/utils';
+import { useNavigate } from 'react-router-dom';
 
 export default function Promo() {
-
-    const classStyles = {
-        // Modified to include the gradient background from the image
-        COMPONENT: "relative overflow-hidden z-[2] w-full min-h-[332px] sm:min-h-[55vh] md:min-h-[400px] rounded-[60px] p-8 md:p-16 flex items-center",
-        GRADIENT_BG: "absolute inset-0 bg-gradient-to-br from-[#f8c8a0] via-[#f3f0e8] to-[#9db0a3] opacity-80",
-        CONTAINER: "relative z-[3] w-full flex flex-col md:flex-row justify-between items-center gap-8",
-        TEXT_COMP: "max-w-full md:max-w-[60%] flex flex-col gap-y-8",
-        TEXT: "text-[32px] md:text-[42px] lg:text-[52px] leading-tight font-playfair text-[#2d2d2d]",
-        HIGHLIGHT: "text-[#d97e5d]",
-        BTNS: "flex flex-wrap gap-4 font-poppins font-medium text-xs md:text-base",
-        PRIMARY_BTN: "bg-[#ffa66b] text-white px-6 py-3 rounded-xl shadow-sm hover:bg-[#f89552] transition-colors",
-        SECONDARY_BTN: "bg-[#c5ced3] text-[#5b7380] px-6 py-3 rounded-xl hover:bg-[#b8c2c8] transition-colors",
-        ARROW_CIRCLE: "flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-[#d97e5d] text-[#d97e5d] hover:bg-[#d97e5d] hover:text-white transition-all cursor-pointer"
-    };
+    const navigate = useNavigate()
 
     return (
-        <section className="p-4 md:p-10">
-            <div className={classStyles.COMPONENT}>
-                {/* Background Gradient */}
-                <div className={classStyles.GRADIENT_BG} />
+        <section className="px-4 py-10 md:px-10 lg:px-20">
+            <div className="relative overflow-hidden z-[2] w-full min-h-max rounded-[30px] md:rounded-[60px] p-8 md:p-16 flex items-center shadow-lg">
 
-                <div className={classStyles.CONTAINER}>
+                {/* Background Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#f8c8a0] via-[#f3f0e8] to-[#9db0a3] opacity-90" />
+
+                <div className="relative z-[3] w-full flex flex-col md:flex-row justify-between items-center gap-10">
+
                     {/* Left Content */}
-                    <div className={classStyles.TEXT_COMP}>
-                        <h2 className={classStyles.TEXT}>
-                            Explore our flexible packages that combine these services to <br />
-                            <span className={classStyles.HIGHLIGHT}>save time and money.</span>
+                    <div className="w-full md:max-w-[70%] flex flex-col gap-y-6 md:gap-y-10 items-center md:items-start text-center md:text-left">
+                        <h2 className="text-[26px] md:text-[42px] lg:text-[52px] leading-tight font-playfair text-[#2d2d2d] font-semibold">
+                            Explore our flexible packages that combine these services to <br className="hidden lg:block" />
+                            <span className="text-[#d97e5d]">save time and money.</span>
                         </h2>
 
-                        <div className={classStyles.BTNS}>
-                            <Button customizeStyle={classStyles.PRIMARY_BTN}
-                            buttonText={`Compare Packages`}/>
-                            
+                        <div className="flex flex-col sm:flex-row flex-wrap gap-4 font-poppins font-medium w-full sm:w-auto">
                             <Button
-                            buttonText={`Get a Custom Quote`}
-                            customizeStyle={classStyles.SECONDARY_BTN}/>
-                            
+                                onClick={() => { navigate("/packages") }}
+                                customizeStyle="bg-[#ffa66b] text-white px-8 py-4 rounded-xl shadow-md hover:bg-[#f89552] transition-all w-full sm:w-auto text-center"
+                                buttonText="Compare Packages"
+                            />
+
+                            <Button
+                                onClick={chatOnWhatsapp}
+                                buttonText="Get a Custom Quote"
+                                customizeStyle="bg-[#c5ced3] text-[#5b7380] px-8 py-4 rounded-xl hover:bg-[#b8c2c8] transition-all w-full sm:w-auto text-center"
+                            />
                         </div>
                     </div>
 
-                    {/* Right Action */}
-                    <div className="hidden md:flex">
-                        <div className={classStyles.ARROW_CIRCLE}>
-                            <ArrowRight size={32} strokeWidth={1.5} />
+                    {/* Right Action Icon */}
+                    <div
+                        onClick={() => { navigate("/packages") }}
+                        className=" items-center justify-center hidden lg:flex">
+                        <div className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-[#d97e5d] text-[#d97e5d] hover:bg-[#d97e5d] hover:text-white transition-all cursor-pointer group bg-white/20 backdrop-blur-sm">
+                            <ArrowRight size={36} strokeWidth={1.5} className="group-hover:translate-x-1 transition-transform" />
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
