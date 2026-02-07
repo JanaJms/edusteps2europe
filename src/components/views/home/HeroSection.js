@@ -23,7 +23,7 @@ export default function HeroSection() {
                     />
                 </picture>
                 {/* Modern Gradient Overlay: Darker at the bottom/left for text contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 lg:bg-gradient-to-r lg:from-black/70 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 lg:bg-gradient-to-r lg:from-black/50 to-transparent" />
             </div>
 
             {/* Content Container */}

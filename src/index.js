@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import Navbar from './components/navbars/Navbar';
+import Footer from './components/footers/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Navbar />
     <App />
+    <Footer/>
   </BrowserRouter>
 );
 
