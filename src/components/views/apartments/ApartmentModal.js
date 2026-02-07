@@ -8,12 +8,12 @@ export default function ApartmentModal({ apartment, onClose }) {
 
     const nextImage = (e) => {
         e.stopPropagation();
-        setCurrentImageIndex((prev) => (prev + 1) % apartment.images.length);
+        setCurrentImageIndex((prev) => (prev + 1) % apartment?.images?.length);
     };
 
     const prevImage = (e) => {
         e.stopPropagation();
-        setCurrentImageIndex((prev) => (prev - 1 + apartment.images.length) % apartment.images.length);
+        setCurrentImageIndex((prev) => (prev - 1 + apartment?.images?.length) % apartment?.images?.length);
     };
 
     return (
@@ -39,17 +39,17 @@ export default function ApartmentModal({ apartment, onClose }) {
                         <ImageWithFallback
                             src={apartment?.images?.[currentImageIndex]}
                             alt={apartment?.title}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                         />
 
                         {/* Navigation Arrows */}
                         {apartment?.images?.length > 1 && (
                             <>
                                 <div className="absolute inset-0 flex items-center justify-between px-4">
-                                    <button onClick={prevImage} className="p-3 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white hover:text-black-metal transition-all">
+                                    <button onClick={prevImage} className="p-3 shadow-lg rounded-full bg-white/20 backdrop-blur-md text-black hover:bg-white hover:text-whishkey-orange transition-all">
                                         <ChevronLeft size={24} />
                                     </button>
-                                    <button onClick={nextImage} className="p-3 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white hover:text-black-metal transition-all">
+                                    <button onClick={nextImage} className="p-3 rounded-full shadow-lg bg-white/20 backdrop-blur-md text-black hover:bg-white hover:text-whishkey-orange transition-all">
                                         <ChevronRight size={24} />
                                     </button>
                                 </div>
