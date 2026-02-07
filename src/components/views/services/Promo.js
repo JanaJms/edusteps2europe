@@ -31,8 +31,8 @@ export default function Promo() {
 
                             <Button
                                 onClick={chatOnWhatsapp}
+                                customizeStyle="bg-white/30  backdrop-blur-md border border-white/20 text-green-cyan px-8 py-4 rounded-xl font-poppins font-semibold hover:bg-white/20 transition-all w-full sm:w-auto text-center"
                                 buttonText="Get a Custom Quote"
-                                customizeStyle="bg-[#c5ced3] text-[#5b7380] px-8 py-4 rounded-xl hover:bg-[#b8c2c8] transition-all w-full sm:w-auto text-center"
                             />
                         </div>
                     </div>
