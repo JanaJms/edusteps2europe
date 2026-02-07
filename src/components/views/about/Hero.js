@@ -1,7 +1,7 @@
 import React from 'react'
 import bg from '../../../assets/images/about-bg.png'
 import about1 from '../../../assets/images/about-1.png'
-import about2 from '../../../assets/images/about-2.png'
+import about2 from '../../../assets/images/french.png'
 import about3 from '../../../assets/images/about-3.png'
 
 export default function Hero() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import mission from '../../../assets/images/france students 1.png'
+import mission from '../../../assets/images/group.png'
 
 export default function Mission() {
     return (
