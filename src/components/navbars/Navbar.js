@@ -44,25 +44,11 @@ export default function Navbar({ customStyle, navStyle }) {
         <header className={classStyles.HEADER}>
             <div className={classStyles.LOGO_COMP}>
                 <a href="/">
-                    {
-                        isActive({ link: '/' }) ?
-                            (
-                                <video
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    src={logoVideo}
-                                    alt="Logo"
-                                    className={classStyles.LOGO} />
-                            )
-                            :
-                            (<img
-                                src={logo}
-                                alt="Logo"
-                                className={classStyles.LOGO}
-                            />)
-                    }
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        className={classStyles.LOGO}
+                    />
 
                 </a>
             </div>
