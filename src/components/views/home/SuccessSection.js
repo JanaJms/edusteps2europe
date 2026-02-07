@@ -61,7 +61,7 @@ export default function SuccessSection() {
                                 // i == 1 adds the right margin only on desktop (lg)
                                 className={`w-full lg:w-auto transition-all duration-300 ${i === 1 ? "lg:mr-20" : ""}`}
                             >
-                                <GlassCard customStyle="px-6 py-8 md:px-8 md:py-10 text-center lg:text-right shadow-xl backdrop-blur-md w-full!">
+                                <GlassCard customStyle="px-6 py-8 md:px-8 md:py-10 text-center lg:text-right shadow-xl backdrop-blur-md !w-full">
                                     <span className="text-sm md:text-lg font-medium">{el}</span>
                                 </GlassCard>
                             </div>
