@@ -12,7 +12,7 @@ export default function ApartmentHero() {
             />
 
             <div className="relative z-10 flex flex-col h-full items-start justify-center ml-20 gap-10">
-                <h1 className=" text-black-metal text-5xl font-bold font-playfair w-[50%]">
+                <h1 className=" text-black-metal text-3xl md:text-5xl font-bold font-playfair w-[50%]">
                     Student Apartments for Rent
                 </h1>
                 <p className="text-base md:text-lg leading-relaxed">

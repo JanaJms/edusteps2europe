@@ -24,7 +24,7 @@ export default function HeroFAQ() {
             {/* Content Container */}
             <div className="relative z-10 container mx-auto h-full flex items-center px-6 md:px-12 lg:px-20 py-20 lg:py-0">
                 <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-                    <h1 className="text-black-metal text-[38px] md:text-[54px] lg:text-[72px] font-bold font-playfair leading-tight text-center lg:text-left max-w-2xl">
+                    <h1 className="text-black-metal text-3xl md:text-5xl font-bold font-playfair leading-tight text-center lg:text-left max-w-2xl">
                         Frequently Asked <br className='hidden md:block' />
                         <span className="text-orange-600 lg:text-inherit">Questions</span>
                     </h1>
