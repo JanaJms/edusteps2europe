@@ -20,7 +20,7 @@ export default function ContactHero() {
                 <img
                     src={img}
                     alt="Contact Hero"
-                    className="w-4/5 md:w-3/5 lg:w-auto lg:h-[90%] object-contain object-bottom"
+                    className="w-4/5 md:w-3/5 lg:w-auto lg:h-[70%] object-contain object-bottom"
                 />
             </div>
 

@@ -15,7 +15,7 @@ export default function HeroFAQ() {
                 <img
                     src={faq}
                     alt="Hero"
-                    className="absolute h-full w-full lg:w-1/2 lg:right-0 object-cover object-center opacity-40 lg:opacity-100"
+                    className="absolute h-full w-full lg:w-1/2 lg:h-[90%] bottom-0 lg:right-0 object-cover object-center opacity-40 lg:opacity-100"
                 />
                 {/* Mobile Overlay to ensure text readability */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#7BAFCB]/20 lg:hidden" />
