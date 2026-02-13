@@ -21,7 +21,7 @@ export default function ApartmentHero() {
                                 <span className="text-orange italic">away from home.</span>
                             </h1>
                             <p className="text-black-metal/70 text-base md:text-lg  leading-relaxed max-w-lg">
-                                Discover hand-picked student apartments across Europe, designed for comfort, study, and community.
+                                Discover hand-picked student accomodations across Europe, designed for comfort, study, and community.
                             </p>
                         </div>
 

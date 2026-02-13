@@ -58,7 +58,7 @@ export default function Navbar() {
         { id: "home", label: "Home", link: "/" },
         { id: "about", label: "About", link: "/about" },
         { id: "services", label: "Services", link: "/services" },
-        { id: "apartments", label: "Apartments", link: "/appartments" },
+        { id: "accomodations", label: "Accomodations", link: "/accomodations" },
         { id: "faq", label: "FAQ", link: "/faq" },
         { id: "contact", label: "Contact", link: "/contact" }
     ];
