@@ -2,7 +2,7 @@ export function chatOnWhatsapp() {
     if (typeof window === "undefined") return;
 
     window.open(
-        "https://wa.me/330780752758",
+        "https://wa.me/330780742758",
         "_blank",
         "noopener,noreferrer"
     );

@@ -39,7 +39,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <div onClick={chatOnWhatsapp} className="flex items-center gap-3 text-black-metal/80 cursor-pointer">
                   <Phone size={18} className="text-black-metal" />
-                  <span className="text-sm font-medium">+33 07 80 75 27 58</span>
+                  <span className="text-sm font-medium">+33 07 80 74 27 58</span>
                 </div>
                 <div onClick={openMail} className="flex items-center gap-3 text-black-metal/80 cursor-pointer">
                   <Mail size={18} className="text-black-metal" />

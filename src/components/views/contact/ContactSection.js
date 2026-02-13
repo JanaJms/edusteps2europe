@@ -26,7 +26,7 @@ export default function ContactSection() {
                             onClick={chatOnWhatsapp}
                             icon={phone}
                             title="Call Us"
-                            value="+33 07 80 75 27 58"
+                            value="+33 07 80 74 27 58"
                         />
                         <InfoCard
                             onClick={openMail}
