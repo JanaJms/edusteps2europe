@@ -8,9 +8,9 @@ export default function Hero() {
     return (
         /* Increased bottom margin (mb-32) to make room for the overlapping images */
         <div className='relative w-full mb-32 md:mb-48 lg:mb-64'>
-            
+
             <div className="relative min-h-[60vh] md:h-[70vh] lg:h-[80vh] w-full flex flex-col items-center justify-center overflow-visible">
-                
+
                 {/* Background image - Absolute fills the parent */}
                 <img
                     src={bg}
@@ -23,12 +23,12 @@ export default function Hero() {
                     <h1 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-md">
                         About us
                     </h1>
-                    <p className="text-base md:text-lgleading-relaxed drop-shadow-sm font-poppins">
-                        We know that sending your child to study in another country is a big decision, 
+                    <p className="text-base md:text-xl leading-relaxed drop-shadow-sm font-poppins max-w-2xl">
+                        We know that sending your child to study in another country is a big decision,
                         full of excitement, but also uncertainty.
-                        <span className="block mt-4 md:mt-6">
-                            At <span className='font-bold'>EduSteps2Europe</span>, we give families peace of mind and students the support they 
-                            need to succeed in France, from day one to year one.
+                        <span className="block mt-4 md:mt-6 text-orange font-semibold">
+                            At EduSteps2Europe, we give families peace of mind and students the support they
+                            need to thrive in France.
                         </span>
                     </p>
                 </div>
@@ -36,19 +36,19 @@ export default function Hero() {
                 {/* Floating Images Container */}
                 <div className='absolute bottom-0 lg:-bottom-1/2 translate-y-1/2 lg:translate-y-0 w-full px-4 z-20'>
                     <div className='flex justify-center items-center gap-2 md:gap-6 lg:gap-10 max-w-6xl mx-auto'>
-                        <img 
-                            src={about1} 
-                            alt="About 1" 
+                        <img
+                            src={about1}
+                            alt="About 1"
                             className="w-1/3 max-w-[120px] md:max-w-[200px] lg:max-w-[300px] h-auto shadow-lg rounded-xl object-cover transition-transform hover:scale-105"
                         />
-                        <img 
-                            src={about2} 
-                            alt="About 2" 
+                        <img
+                            src={about2}
+                            alt="About 2"
                             className="w-1/3 max-w-[140px] md:max-w-[240px] lg:max-w-[350px] h-auto shadow-2xl rounded-xl object-cover -translate-y-4 md:-translate-y-8 transition-transform hover:scale-105"
                         />
-                        <img 
-                            src={about3} 
-                            alt="About 3" 
+                        <img
+                            src={about3}
+                            alt="About 3"
                             className="w-1/3 max-w-[120px] md:max-w-[200px] lg:max-w-[300px] h-auto shadow-lg rounded-xl object-cover transition-transform hover:scale-105"
                         />
                     </div>

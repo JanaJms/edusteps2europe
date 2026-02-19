@@ -4,6 +4,7 @@ import Vision from '../components/views/about/Vision'
 import Mission from '../components/views/about/Mission'
 import Values from '../components/views/about/Values'
 import Question from '../components/views/about/Question'
+import FoundersMessage from '../components/views/about/FounderMssg'
 
 export default function About() {
     return (
@@ -11,6 +12,7 @@ export default function About() {
             <Hero />
             <Vision />
             <Mission />
+            <FoundersMessage/>
             <Values />
             <Question/>
         </div>
