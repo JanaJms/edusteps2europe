@@ -199,6 +199,7 @@
 import React from 'react';
 import { CheckCircle2, MessageCircle, Home, School, Landmark, Briefcase, Languages, Taxi, Info } from 'lucide-react';
 import { chatOnWhatsapp } from '../utils/utils';
+import StudentGuide from '../components/views/packages/Guide';
 
 const Packages = () => {
     const mainPackages = [
@@ -425,6 +426,8 @@ const Packages = () => {
                         </div>
                     </div>
                 </div>
+
+                <StudentGuide/>
 
             </div>
         </div>
