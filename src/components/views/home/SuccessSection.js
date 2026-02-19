@@ -18,7 +18,7 @@ export default function SuccessSection() {
         {
             label: 'Downloadable student checklist',
             type: 'download',
-            link: "https://edusteps2europe.com/uploads/Guide_Administrative_Procedures_International_Students_France.pdf",
+            link: "https://edusteps2europe.com/uploads/CHECLIST.pdf",
             icon: <Download size={20} className="text-orange" />
         },
         {

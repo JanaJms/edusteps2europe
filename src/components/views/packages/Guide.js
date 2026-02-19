@@ -31,7 +31,7 @@ const StudentGuide = ({withCTA}) => {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                     <div>
                         <h2 className="text-3xl font-bold text-black-metal mb-4">International Student Roadmap</h2>
-                        <p className="text-gray-600">A complete checklist of your administrative journey in France.</p>
+                        <p className="text-gray-600">A complete guide of your administrative journey in France.</p>
                     </div>
                     {/* DOWNLOAD BUTTON */}
                     <a
