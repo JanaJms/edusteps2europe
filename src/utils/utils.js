@@ -1,8 +1,10 @@
-export function chatOnWhatsapp() {
+export function chatOnWhatsapp({ message }) {
     if (typeof window === "undefined") return;
 
+    const encodedMessage = encodeURIComponent(message) ?? ''
+
     window.open(
-        "https://wa.me/330780742758",
+        message ? `https://wa.me/330780742758?text=${encodedMessage}` : `https://wa.me/330780742758`,
         "_blank",
         "noopener,noreferrer"
     );
