@@ -431,7 +431,7 @@ const Packages = () => {
                     </div>
                 </div>
 
-                <StudentGuide />
+                <StudentGuide withCTA={false} />
 
             </div>
         </div>

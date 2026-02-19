@@ -2,7 +2,7 @@ import React from 'react';
 import { Download, PlaneTakeoff, GraduationCap, Building2, Smartphone, Landmark } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-const StudentGuide = () => {
+const StudentGuide = ({withCTA}) => {
 
     const navigate = useNavigate();
 
@@ -68,16 +68,17 @@ const StudentGuide = () => {
                 </div>
 
                 {/* CTA - Linking back to packages */}
-                <div className="mt-12 bg-orange p-8 rounded-3xl text-white text-center">
-                    <h3 className="text-xl font-bold mb-2">Feeling Overwhelmed?</h3>
-                    <p className="mb-6 opacity-90">We can handle all these steps for you so you can focus on your studies.</p>
-                    <button
-                        onClick={() => navigate("packages")}
-                        className="bg-white text-orange px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all"
-                    >
-                        View Support Packages
-                    </button>
-                </div>
+                {withCTA &&
+                    <div className="mt-12 bg-orange p-8 rounded-3xl text-white text-center">
+                        <h3 className="text-xl font-bold mb-2">Feeling Overwhelmed?</h3>
+                        <p className="mb-6 opacity-90">We can handle all these steps for you so you can focus on your studies.</p>
+                        <button
+                            onClick={() => navigate("/packages")}
+                            className="bg-white text-orange px-8 py-3 rounded-xl font-bold hover:scale-105 transition-all"
+                        >
+                            View Support Packages
+                        </button>
+                    </div>}
             </div>
         </section>
     );
