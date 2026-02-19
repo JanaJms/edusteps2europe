@@ -56,6 +56,8 @@ export default function HeroSection() {
                     {/* Lead Magnet Link - Styled as a floating badge */}
                     <div className="mt-4 animate-pulse">
                         <a
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href="https://edusteps2europe.com/uploads/Guide_Administrative_Procedures_International_Students_France.pdf"
                             className="inline-flex items-center gap-2 group"
                         >

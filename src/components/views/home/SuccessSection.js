@@ -33,6 +33,8 @@ export default function SuccessSection() {
                             buttonText="Book Free Consultation" 
                         />
                         <a
+                            target="_blank"
+                            rel="noopener noreferrer"
                             href='/packages'
                             className="text-orange-500 underline font-bold cursor-pointer text-sm md:text-base">
                             Or Request a Custom Package
