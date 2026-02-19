@@ -57,6 +57,7 @@ export default function Navbar() {
     const navbarData = [
         { id: "home", label: "Home", link: "/" },
         { id: "about", label: "About", link: "/about" },
+        { id: "packages", label: "Packages", link: "/packages" },
         { id: "services", label: "Services", link: "/services" },
         { id: "accomodations", label: "Accomodations", link: "/accomodations" },
         { id: "faq", label: "FAQ", link: "/faq" },
