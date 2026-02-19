@@ -31,13 +31,13 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <a href="/contact" className="text-black-metal/70 hover:text-orange transition-colors">Contact Us</a>
               <a href="/faq" className="text-black-metal/70 hover:text-orange transition-colors">FAQ</a>
-              <a onClick={chatOnWhatsapp} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">Book a free Call</a>
+              <a onClick={()=>chatOnWhatsapp()} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">Book a free Call</a>
             </div>
 
             {/* Column 4: Contact & Socials */}
             <div className="flex flex-col gap-6">
               <div className="space-y-3">
-                <div onClick={chatOnWhatsapp} className="flex items-center gap-3 text-black-metal/80 cursor-pointer">
+                <div onClick={()=>chatOnWhatsapp()} className="flex items-center gap-3 text-black-metal/80 cursor-pointer">
                   <Phone size={18} className="text-black-metal" />
                   <span className="text-sm font-medium">+33 07 80 74 27 58</span>
                 </div>

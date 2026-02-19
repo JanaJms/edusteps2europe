@@ -28,7 +28,7 @@ export default function SuccessSection() {
 
                     <div className='flex flex-col sm:flex-row gap-5 items-center w-full sm:w-auto'>
                         <Button
-                            onClick={chatOnWhatsapp}
+                            onClick={()=>chatOnWhatsapp()}
                             customizeStyle="bg-[#FF8A50] text-white px-8 py-3 rounded-full w-full sm:w-auto"
                             buttonText="Book Free Consultation" 
                         />

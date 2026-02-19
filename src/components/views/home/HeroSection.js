@@ -41,7 +41,7 @@ export default function HeroSection() {
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row items-center gap-4">
                         <Button
-                            onClick={chatOnWhatsapp}
+                            onClick={()=>chatOnWhatsapp()}
                             customizeStyle="bg-[#ffa66b] text-white px-8 py-4 rounded-xl font-poppins font-semibold shadow-lg hover:bg-[#f89552] transition-all w-full sm:w-auto text-center"
                             buttonText="Book Free Consultation" 
                         />

@@ -23,7 +23,7 @@ export default function ContactSection() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
                         <InfoCard
                             className='cursor-pointer'
-                            onClick={chatOnWhatsapp}
+                            onClick={()=>chatOnWhatsapp()}
                             icon={phone}
                             title="Call Us"
                             value="+33 07 80 74 27 58"

@@ -24,7 +24,7 @@ export default function Question() {
 
                 <div className='pt-4 w-full flex justify-center lg:justify-start'>
                     <Button
-                        onClick={chatOnWhatsapp}
+                        onClick={()=>chatOnWhatsapp("Hello, I want to book a call")}
                         customizeStyle="bg-light-orange text-white-smoke px-6 py-4 rounded-full font-medium transition-transform hover:scale-105"
                         buttonText="Book a call with an EDUSTEPS2EUROPE alumni" 
                     />

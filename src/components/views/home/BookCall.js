@@ -36,7 +36,7 @@ export default function BookCall() {
                     </h2>
                     
                     <button
-                        onClick={chatOnWhatsapp}
+                        onClick={()=>chatOnWhatsapp()}
                         className='group relative inline-flex items-center gap-4 bg-[#5FA78D] hover:bg-[#4d8b75] text-white px-8 py-4 md:px-10 md:py-5 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 shadow-xl'
                     >
                         <span className='text-base md:text-lg font-bold'>Get Started Now</span>

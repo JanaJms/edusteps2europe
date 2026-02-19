@@ -145,7 +145,7 @@ export default function ApartmentModal({ apartment, onClose }) {
                                     </div>
 
                                     <button
-                                        onClick={chatOnWhatsapp}
+                                        onClick={() => chatOnWhatsapp(`Hello, I want to request a viewing to ${apartment?.title}`)}
                                         className="w-full bg-orange text-white py-4 rounded-2xl font-bold shadow-lg shadow-orange/20 hover:bg-light-orange transition-all transform hover:-translate-y-1">
                                         Request a Viewing
                                     </button>

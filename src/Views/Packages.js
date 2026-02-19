@@ -368,7 +368,7 @@ const Packages = () => {
                             </div>
                         </div>
                         <a
-                            onClick={()=>chatOnWhatsapp("I want to inquire for service")}
+                            onClick={() => chatOnWhatsapp("I want to inquire for service")}
                             className="cursor-pointer mt-8 border border-white/20 text-center py-4 rounded-xl font-bold hover:bg-white hover:text-black-metal transition-all"
                         >
                             Inquire for Service
@@ -397,7 +397,7 @@ const Packages = () => {
 
                         {/* --- THE CTA BUTTON --- */}
                         <a
-                            onClick={chatOnWhatsapp}
+                            onClick={() => chatOnWhatsapp()}
                             className="cursor-pointer mt-4 bg-white text-orange text-center py-5 rounded-2xl font-black text-lg shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3"
                         >
                             <MessageCircle size={24} fill="currentColor" className="text-orange" />
