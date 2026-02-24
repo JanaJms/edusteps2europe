@@ -271,5 +271,10 @@
         "cta_title": "Feeling Overwhelmed?",
         "cta_desc": "We can handle all these steps for you so you can focus on your studies.",
         "cta_btn": "View Support Packages"
+    },
+    "services_hero": {
+        "title_part1": "Everything Your Child Needs",
+        "title_part2": "In One Place",
+        "description": "From documents to daily life, our services cover every step of your child’s journey to study in France."
     }
 }

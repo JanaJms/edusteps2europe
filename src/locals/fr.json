@@ -271,5 +271,10 @@
         "cta_title": "Vous vous sentez dépassé ?",
         "cta_desc": "Nous pouvons gérer toutes ces étapes pour vous afin que vous puissiez vous concentrer sur vos études.",
         "cta_btn": "Voir les formules d'accompagnement"
+    },
+    "services_hero": {
+        "title_part1": "Tout ce dont votre enfant a besoin",
+        "title_part2": "en un seul endroit",
+        "description": "Des documents à la vie quotidienne, nos services couvrent chaque étape du voyage de votre enfant pour étudier en France."
     }
 }
