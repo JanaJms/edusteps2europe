@@ -283,5 +283,103 @@
         "btn_compare": "Compare Packages",
         "btn_quote": "Get a Custom Quote",
         "whatsapp_message": "Hello, I want to get a custom quote"
+    },
+    "services_page": {
+        "main_title": "Our Services – step-by-step support",
+        "sections": {
+            "academics": {
+                "title": "University & Academics",
+                "items": {
+                    "comparison": {
+                        "title": "University comparison",
+                        "desc": "Rankings, career prospects, locations"
+                    },
+                    "integration": {
+                        "title": "University life integration",
+                        "desc": "Student associations, library registration, social events"
+                    },
+                    "jobs": {
+                        "title": "Student jobs",
+                        "desc": "20h/week rules, CV help"
+                    }
+                }
+            },
+            "housing": {
+                "title": "Housing & Essentials",
+                "items": {
+                    "housing": {
+                        "title": "Housing",
+                        "desc": "Help contacting/choosing residences"
+                    },
+                    "essentials": {
+                        "title": "Essential purchases",
+                        "desc": "Kettle, cutlery, duvet, pillows, sheets, hygiene products"
+                    },
+                    "storage": {
+                        "title": "Storage support",
+                        "desc": "Luggage saving during vacation or moving"
+                    }
+                }
+            },
+            "legal": {
+                "title": "Legal & Administrative",
+                "items": {
+                    "vls": {
+                        "title": "VLS validation",
+                        "desc": "Support with online visa validation"
+                    },
+                    "passport": {
+                        "title": "Residence permit",
+                        "desc": "Guidance for validation and administrative steps"
+                    },
+                    "translations": {
+                        "title": "French translations",
+                        "desc": "Document translation support"
+                    },
+                    "crous": {
+                        "title": "CROUS",
+                        "desc": "Account setup and submission"
+                    },
+                    "ameli": {
+                        "title": "AMELI",
+                        "desc": "Social security enrollment"
+                    },
+                    "caf": {
+                        "title": "CAF",
+                        "desc": "Account creation for housing aid"
+                    },
+                    "bank": {
+                        "title": "Bank account",
+                        "desc": "Support with opening a French bank account"
+                    },
+                    "phone": {
+                        "title": "Phone subscriptions",
+                        "desc": "Guidance for mobile plans"
+                    }
+                }
+            },
+            "local": {
+                "title": "Local Life Setup",
+                "items": {
+                    "transport": {
+                        "title": "Local transport",
+                        "desc": "Navigo pass, public transport guidance"
+                    },
+                    "costs": {
+                        "title": "Living costs",
+                        "desc": "Estimated monthly expenses by city"
+                    }
+                }
+            },
+            "ongoing": {
+                "title": "Ongoing Support",
+                "items": {
+                    "whatsapp": {
+                        "title": "WhatsApp assistance",
+                        "desc": "Real-time help anytime"
+                    }
+                }
+            }
+        }
     }
 }

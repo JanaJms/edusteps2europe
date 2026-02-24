@@ -283,5 +283,103 @@
         "btn_compare": "Comparer les formules",
         "btn_quote": "Demander un devis personnalisé",
         "whatsapp_message": "Bonjour, je souhaite obtenir un devis personnalisé"
+    },
+    "services_page": {
+        "main_title": "Nos Services – un accompagnement pas à pas",
+        "sections": {
+            "academics": {
+                "title": "Université et Études",
+                "items": {
+                    "comparison": {
+                        "title": "Comparaison d'universités",
+                        "desc": "Classements, débouchés, localisations"
+                    },
+                    "integration": {
+                        "title": "Intégration vie étudiante",
+                        "desc": "Associations, inscription bibliothèque, événements sociaux"
+                    },
+                    "jobs": {
+                        "title": "Jobs étudiants",
+                        "desc": "Règles des 20h/semaine, aide au CV"
+                    }
+                }
+            },
+            "housing": {
+                "title": "Logement et Essentiels",
+                "items": {
+                    "housing": {
+                        "title": "Logement",
+                        "desc": "Aide pour contacter/choisir des résidences"
+                    },
+                    "essentials": {
+                        "title": "Achats essentiels",
+                        "desc": "Bouilloire, couverts, couette, oreillers, draps, hygiène"
+                    },
+                    "storage": {
+                        "title": "Aide au stockage",
+                        "desc": "Gardiennage de bagages pendant les vacances ou déménagement"
+                    }
+                }
+            },
+            "legal": {
+                "title": "Juridique et Administratif",
+                "items": {
+                    "vls": {
+                        "title": "Validation VLS",
+                        "desc": "Aide à la validation du visa en ligne"
+                    },
+                    "passport": {
+                        "title": "Titre de séjour",
+                        "desc": "Guide pour la validation et les étapes administratives"
+                    },
+                    "translations": {
+                        "title": "Traductions françaises",
+                        "desc": "Aide à la traduction de documents"
+                    },
+                    "crous": {
+                        "title": "CROUS",
+                        "desc": "Configuration du compte et soumission"
+                    },
+                    "ameli": {
+                        "title": "AMELI",
+                        "desc": "Inscription à la sécurité sociale"
+                    },
+                    "caf": {
+                        "title": "CAF",
+                        "desc": "Création de compte pour l'aide au logement"
+                    },
+                    "bank": {
+                        "title": "Compte bancaire",
+                        "desc": "Aide à l'ouverture d'un compte bancaire français"
+                    },
+                    "phone": {
+                        "title": "Forfaits mobiles",
+                        "desc": "Conseils pour les abonnements téléphoniques"
+                    }
+                }
+            },
+            "local": {
+                "title": "Installation Vie Locale",
+                "items": {
+                    "transport": {
+                        "title": "Transports locaux",
+                        "desc": "Pass Navigo, guide des transports publics"
+                    },
+                    "costs": {
+                        "title": "Coût de la vie",
+                        "desc": "Estimation des dépenses mensuelles par ville"
+                    }
+                }
+            },
+            "ongoing": {
+                "title": "Soutien Continu",
+                "items": {
+                    "whatsapp": {
+                        "title": "Assistance WhatsApp",
+                        "desc": "Aide en temps réel à tout moment"
+                    }
+                }
+            }
+        }
     }
 }
