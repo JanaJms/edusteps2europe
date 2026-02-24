@@ -15,6 +15,7 @@ import texting from "../../../assets/images/SEND TEXTS_ Message your friend as o
 import vls from "../../../assets/images/THE IMPORTANCE OF ACCURACY IN LEGAL TRANSLATION.jpeg"
 import phone from "../../../assets/images/This Phone Hack Can Save You Hundreds on Your Next….jpeg"
 import housing from "../../../assets/images/When renting out Student Apartments in Mobile, we….jpeg"
+import { useTranslation } from "react-i18next"
 
 export default function ServicesSection() {
     const { t } = useTranslation();

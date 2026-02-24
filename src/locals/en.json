@@ -381,5 +381,91 @@
                 }
             }
         }
+    },
+    "packages": {
+        "intro": {
+            "title": "Our Support Packages",
+            "description": "Managing your arrival in Europe can be overwhelming. With <0>EduSteps2Europe</0>, receive high-quality, professional support to secure your administrative journey.",
+            "badge": "First Year Rate • 100€ per additional year"
+        },
+        "main": {
+            "recommended": "RECOMMENDED",
+            "choose_plan": "Choose this plan",
+            "essential": {
+                "name": "Essential Package",
+                "description": "We guide you through the requirements for every administrative procedure.",
+                "features": [
+                    "Step-by-step explanations",
+                    "Useful contact list",
+                    "Official administrative links"
+                ],
+                "message": "I want to subscribe to the Essential Package"
+            },
+            "comfort": {
+                "name": "Comfort Package",
+                "description": "We send you the required forms and remain available to help you complete them.",
+                "features": [
+                    "Everything in Essential",
+                    "Ready-to-fill form delivery",
+                    "Dedicated support via email/phone"
+                ],
+                "message": "I want to subscribe to the Comfort Package"
+            },
+            "peace": {
+                "name": "Peace of Mind",
+                "description": "Our most comprehensive formula for total administrative support.",
+                "features": [
+                    "Full administrative management",
+                    "Personalized city cost analysis",
+                    "FREE 24/7 WhatsApp assistance"
+                ],
+                "message": "I want to subscribe to the Peace of Mind Package"
+            }
+        },
+        "specialized": {
+            "title": "Specialized Services",
+            "university": {
+                "title": "University Search",
+                "t1": "List of 5 schools + links + admission requirements",
+                "t2": "Comparative synthesis (Program, costs, reputation)",
+                "t3": "Admission strategy + application calendar + sample files"
+            },
+            "housing": {
+                "title": "Student Housing",
+                "t1": "5 to 8 residences + links + application tips",
+                "t2": "Direct contact with options + viewing assistance + follow-up"
+            },
+            "banking": {
+                "title": "Banking Setup",
+                "t1": "List of suitable banks + detailed account opening guide",
+                "t2": "Direct bank contact + trilingual support (FR/ENG/AR) + full follow-up"
+            }
+        },
+        "alacarte": {
+            "title": "A La Carte Services",
+            "job": "Student Job Search",
+            "job_desc": "CV + Cover Letter + Search Strategy",
+            "translation": "Document Translation",
+            "translation_desc": "Certified translation coordination",
+            "taxi": "Airport Pickup (Taxi)",
+            "taxi_desc": "Booking and greeting service",
+            "btn": "Inquire for Service",
+            "wa_msg": "I want to inquire for an A La Carte service"
+        },
+        "whatsapp_card": {
+            "title": "24/7 WhatsApp Support",
+            "description": "Need a quick answer for <0>Doctolib</0>, <1>Ameli</1>, or an urgent administrative question? Get direct, instant access to our expert team.",
+            "promo_title": "FREE with \"Peace of Mind\" Package",
+            "promo_subtitle": "Custom rates apply for individual questions on other plans.",
+            "btn": "Chat with an Expert Now"
+        },
+        "info": {
+            "title": "Essential Information",
+            "p1": "• Upon arrival in France, you must pay the <0>CVEC</0>, register with the <1>CROUS</1>, and take out civil liability insurance.",
+            "p2": "• <0>Minors:</0> No specific administrative steps are required for the student visa.",
+            "p3": "• <0>Adults:</0> You have 2 months to validate your VLS-TS visa upon arrival.",
+            "p4": "• <0>Social Security:</0> Registration on <1>etranger.ameli.fr</1> is mandatory for healthcare reimbursements and CAF housing benefits.",
+            "disclaimer": "Disclaimer: EduSteps2Europe is not responsible for administrative rejections (e.g., visa refusal)."
+        }
     }
 }

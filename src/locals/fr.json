@@ -381,5 +381,91 @@
                 }
             }
         }
+    },
+    "packages": {
+        "intro": {
+            "title": "Nos Formules d'Accompagnement",
+            "description": "Gérer votre arrivée en Europe peut être complexe. Avec <0>EduSteps2Europe</0>, bénéficiez d'un soutien professionnel de haute qualité pour sécuriser vos démarches.",
+            "badge": "Tarif 1ère année • 100€ par année supplémentaire"
+        },
+        "main": {
+            "recommended": "RECOMMANDÉ",
+            "choose_plan": "Choisir cette formule",
+            "essential": {
+                "name": "Formule Essentiel",
+                "description": "Nous vous expliquons les démarches pour chaque procédure administrative.",
+                "features": [
+                    "Explications détaillées",
+                    "Contacts utiles",
+                    "Liens administratifs officiels"
+                ],
+                "message": "Je souhaite souscrire à la Formule Essentiel"
+            },
+            "comfort": {
+                "name": "Formule Confort",
+                "description": "Nous vous envoyons les formulaires et restons joignables pour vous guider.",
+                "features": [
+                    "Tout de la formule Essentiel",
+                    "Envoi des formulaires prêts à remplir",
+                    "Support réactif par email/téléphone"
+                ],
+                "message": "Je souhaite souscrire à la Formule Confort"
+            },
+            "peace": {
+                "name": "Esprit Tranquille",
+                "description": "Notre formule la plus complète pour un accompagnement total.",
+                "features": [
+                    "Accompagnement administratif total",
+                    "Analyse personnalisée des coûts",
+                    "Assistance WhatsApp 7J/7 offerte"
+                ],
+                "message": "Je souhaite souscrire à la Formule Esprit Tranquille"
+            }
+        },
+        "specialized": {
+            "title": "Services Spécialisés",
+            "university": {
+                "title": "Recherche d'Université",
+                "t1": "Liste de 5 écoles + liens + conditions d'admission",
+                "t2": "Synthèse comparative (Programme, coûts, réputation)",
+                "t3": "Stratégie d'admission + calendrier + dossier type"
+            },
+            "housing": {
+                "title": "Logement Étudiant",
+                "t1": "5 à 8 résidences + liens + conseils candidature",
+                "t2": "Contact direct + aide aux visites + suivi"
+            },
+            "banking": {
+                "title": "Compte Bancaire",
+                "t1": "Liste des banques + guide détaillé d'ouverture",
+                "t2": "Contact banque + support trilingue (FR/EN/AR) + suivi complet"
+            }
+        },
+        "alacarte": {
+            "title": "Services à la Carte",
+            "job": "Recherche de Job Étudiant",
+            "job_desc": "CV + Lettre de Motivation + Stratégie de recherche",
+            "translation": "Traduction de Documents",
+            "translation_desc": "Coordination avec traducteurs assermentés",
+            "taxi": "Accueil Aéroport (Taxi)",
+            "taxi_desc": "Service de réservation et d'accueil",
+            "btn": "Demander un service",
+            "wa_msg": "Je souhaite me renseigner sur un service à la carte"
+        },
+        "whatsapp_card": {
+            "title": "Support WhatsApp 7J/7",
+            "description": "Besoin d'une réponse rapide pour <0>Doctolib</0>, <1>Ameli</1>, ou une question urgente ? Accédez directement à nos experts.",
+            "promo_title": "OFFERT avec la formule \"Esprit Tranquille\"",
+            "promo_subtitle": "Tarifs personnalisés pour les questions isolées sur les autres formules.",
+            "btn": "Discuter avec un expert"
+        },
+        "info": {
+            "title": "Informations Essentielles",
+            "p1": "• À votre arrivée en France, vous devez payer la <0>CVEC</0>, vous inscrire au <1>CROUS</1> et souscrire une assurance responsabilité civile.",
+            "p2": "• <0>Mineurs :</0> Aucune démarche spécifique pour le visa étudiant.",
+            "p3": "• <0>Majeurs :</0> Vous avez 2 mois pour valider votre visa VLS-TS après votre arrivée.",
+            "p4": "• <0>Sécurité Sociale :</0> L'inscription sur <1>etranger.ameli.fr</1> est obligatoire pour les remboursements et les aides CAF.",
+            "disclaimer": "Note : EduSteps2Europe n'est pas responsable des refus administratifs (ex : refus de visa)."
+        }
     }
 }
