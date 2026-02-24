@@ -35,5 +35,10 @@
         "title": "À propos de nous",
         "description": "Nous savons que l'envoi de votre enfant étudier dans un autre pays est une décision importante, pleine d'excitation, mais aussi d'incertitude.",
         "highlight": "Chez EduSteps2Europe, nous offrons aux familles la tranquillité d'esprit et aux étudiants le soutien dont ils ont besoin pour s'épanouir en France."
+    },
+    "about_mission": {
+        "title": "Notre mission est de donner les moyens aux étudiants internationaux",
+        "para1": "En fournissant l'accompagnement, les ressources et le soutien local dont ils ont besoin pour poursuivre leurs études en France en toute confiance.",
+        "para2": "Nous visons à simplifier chaque étape du processus — de la sélection de la bonne université à l'adaptation à la vie à l'étranger — garantissant une transition fluide et une première année réussie."
     }
 }

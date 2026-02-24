@@ -35,5 +35,10 @@
         "title": "About us",
         "description": "We know that sending your child to study in another country is a big decision, full of excitement, but also uncertainty.",
         "highlight": "At EduSteps2Europe, we give families peace of mind and students the support they need to thrive in France."
+    },
+    "about_mission": {
+        "title": "Our mission is to empower international students",
+        "para1": "By providing the guidance, resources, and local support they need to confidently pursue their education in France.",
+        "para2": "We aim to simplify every step of the process—from selecting the right university to adjusting to life abroad—ensuring a smooth transition and a successful first year."
     }
 }
