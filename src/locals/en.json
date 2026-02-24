@@ -221,5 +221,9 @@
         "notice_text": "Rentals are facilitated through",
         "notice_cta": "Contact us to arrange viewings.",
         "img_alt": "Modern Apartment Interior"
+    },
+    "contact_hero": {
+        "title": "Contact Us",
+        "subtitle": "We’re here to help you take the next step with confidence."
     }
 }

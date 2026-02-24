@@ -221,5 +221,9 @@
         "notice_text": "Les locations sont facilitées par",
         "notice_cta": "Contactez-nous pour organiser des visites.",
         "img_alt": "Intérieur d'appartement moderne"
+    },
+    "contact_hero": {
+        "title": "Contactez-nous",
+        "subtitle": "Nous sommes là pour vous aider à franchir la prochaine étape en toute confiance."
     }
 }
