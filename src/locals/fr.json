@@ -40,5 +40,15 @@
         "title": "Notre mission est de donner les moyens aux étudiants internationaux",
         "para1": "En fournissant l'accompagnement, les ressources et le soutien local dont ils ont besoin pour poursuivre leurs études en France en toute confiance.",
         "para2": "Nous visons à simplifier chaque étape du processus — de la sélection de la bonne université à l'adaptation à la vie à l'étranger — garantissant une transition fluide et une première année réussie."
+    },
+    "about_question": {
+        "title_top": "Vous avez encore des questions ?",
+        "title_bottom": "Demandez à quelqu'un qui l'a",
+        "title_highlight": "vécu",
+        "title_end": ".",
+        "description_1": "Nos ambassadeurs alumni sont des étudiants comme votre enfant — originaires de votre région, qui étudient actuellement en France. Ils ont suivi les mêmes étapes de candidature, ont déménagé à l'étranger et construisent leur avenir.",
+        "description_2": "Demandez-leur ce que c'est vraiment — logement, cours, choix d'une ville, amitiés, tout.",
+        "button_text": "Prendre RDV avec un alumni d'EDUSTEPS2EUROPE",
+        "whatsapp_message": "Bonjour, je souhaite prendre rendez-vous avec un alumni"
     }
 }

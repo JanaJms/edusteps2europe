@@ -40,5 +40,15 @@
         "title": "Our mission is to empower international students",
         "para1": "By providing the guidance, resources, and local support they need to confidently pursue their education in France.",
         "para2": "We aim to simplify every step of the process—from selecting the right university to adjusting to life abroad—ensuring a smooth transition and a successful first year."
+    },
+    "about_question": {
+        "title_top": "Still have questions?",
+        "title_bottom": "Ask someone who’s",
+        "title_highlight": "lived",
+        "title_end": "it.",
+        "description_1": "Our alumni ambassadors are students just like your child — from your region, studying in France now. They’ve gone through the same application steps, moved abroad, and are building their future.",
+        "description_2": "Ask them what it's really like — housing, classes, choosing a city, making friends, anything.",
+        "button_text": "Book a call with an EDUSTEPS2EUROPE alumni",
+        "whatsapp_message": "Hello, I want to book a call with an alumni"
     }
 }
