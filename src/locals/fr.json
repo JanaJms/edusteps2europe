@@ -245,5 +245,31 @@
             "note_bold": "Note :",
             "note_text": "Incluez votre numéro de référence étudiant dans la description du paiement. Vérifiez les détails en nous contactant directement avant le transfert."
         }
+    },
+    "roadmap": {
+        "header_title": "Feuille de route de l'étudiant international",
+        "header_subtitle": "Un guide complet de votre parcours administratif en France.",
+        "download_btn": "Télécharger le guide PDF",
+        "section1_title": "Avant l'inscription",
+        "section1_steps": [
+            "Payer la CVEC (100 €) - Requis pour les services universitaires."
+        ],
+        "section2_title": "Après l'acceptation",
+        "section2_steps": [
+            "Trouver un logement (CROUS vs Privé)",
+            "Obtenir un garant (Visale/Garantme)",
+            "Souscrire à EDF (Électricité)",
+            "Prendre une assurance habitation"
+        ],
+        "section3_title": "À l'arrivée",
+        "section3_steps": [
+            "Obtenir une carte SIM française",
+            "Ouvrir un compte bancaire",
+            "Valider votre visa VLS-TS en ligne",
+            "S'inscrire à l'assurance maladie (Ameli)"
+        ],
+        "cta_title": "Vous vous sentez dépassé ?",
+        "cta_desc": "Nous pouvons gérer toutes ces étapes pour vous afin que vous puissiez vous concentrer sur vos études.",
+        "cta_btn": "Voir les formules d'accompagnement"
     }
 }

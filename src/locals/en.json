@@ -245,5 +245,31 @@
             "note_bold": "Note:",
             "note_text": "Include your student reference number in the payment description. Verify details by contacting us directly before transfer."
         }
+    },
+    "roadmap": {
+        "header_title": "International Student Roadmap",
+        "header_subtitle": "A complete guide of your administrative journey in France.",
+        "download_btn": "Download PDF Guide",
+        "section1_title": "Before Enrolling",
+        "section1_steps": [
+            "Pay the CVEC (€100) - Required for university services."
+        ],
+        "section2_title": "After Acceptance",
+        "section2_steps": [
+            "Find Housing (CROUS vs Private)",
+            "Get a Housing Guarantor (Visale/Garantme)",
+            "Set up EDF (Electricity)",
+            "Take out Home Insurance"
+        ],
+        "section3_title": "Upon Arrival",
+        "section3_steps": [
+            "Get a French SIM Card",
+            "Open a Bank Account",
+            "Validate your VLS-TS Visa online",
+            "Register for Free Health Insurance (Ameli)"
+        ],
+        "cta_title": "Feeling Overwhelmed?",
+        "cta_desc": "We can handle all these steps for you so you can focus on your studies.",
+        "cta_btn": "View Support Packages"
     }
 }
