@@ -195,5 +195,15 @@
                 "Proche métro"
             ]
         }
+    },
+    "accommodation_hero": {
+        "badge": "Vie Étudiante Premium",
+        "title_main": "Votre foyer idéal",
+        "title_highlight": "loin de chez vous.",
+        "description": "Découvrez des logements étudiants sélectionnés avec soin en Europe, conçus pour le confort, l'étude et la vie en communauté.",
+        "notice_title": "Avis Important",
+        "notice_text": "Les locations sont facilitées par",
+        "notice_cta": "Contactez-nous pour organiser des visites.",
+        "img_alt": "Intérieur d'appartement moderne"
     }
 }
