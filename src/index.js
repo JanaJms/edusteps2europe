@@ -7,11 +7,14 @@ import { BrowserRouter, HashRouter } from 'react-router-dom';
 import Navbar from './components/navbars/Navbar';
 import Footer from './components/footers/Footer';
 import ScrollToTop from './utils/ScrollTop';
+import LanguageSwitcher from './components/cards/LangSwitcher';
+import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <ScrollToTop />
+    <LanguageSwitcher/>
     <Navbar />
     <App />
     <Footer />
