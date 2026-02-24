@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { MapPin, Maximize, Bed, Bath, ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ImageWithFallback from '../../cards/ImageWithFallback';
 import ApartmentModal from './ApartmentModal';
-import Button from '../../buttons/Button';
 
 export default function ApartmentGrid() {
+    const { t } = useTranslation();
     const [selectedApartment, setSelectedApartment] = useState(null);
 
     const apartments = [
         {
             id: 1,
-            title: 'Furnished Studio',
-            location: 'Boulogne Billancourt - Ouest Paris vers porte Saint cloud Rue Émile Landrin - Métro Marcel Sembat ligne 9 (2 minutes)',
+            title: t('accommodations.studio_1.title'),
+            location: t('accommodations.studio_1.location'),
             price: '920',
             image: 'https://edusteps2europe.com/uploads/home5',
             images: [
@@ -27,19 +28,12 @@ export default function ApartmentGrid() {
                 'https://edusteps2europe.com/uploads/home10',
                 'https://edusteps2europe.com/uploads/home11',
             ],
-            description: "Very well-designed and functional furnished studio located on the second floor of an old town-house style building...",
+            description: t('accommodations.studio_1.description'),
             bedrooms: 1,
             bathrooms: 1,
             size: '17',
-            availability: 'Available Now',
-            amenities: [
-                'WiFi Included',
-                'Fully Furnished',
-                'Utilities Included',
-                "Electricity subscription included",
-                "APL eligible",
-                "Second floor",
-                "Near metro"]
+            availability: t('accommodations.studio_1.availability'),
+            amenities: t('accommodations.studio_1.amenities', { returnObjects: true })
         }
     ]
 
@@ -50,9 +44,9 @@ export default function ApartmentGrid() {
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-playfair font-bold text-black-metal">
-                            Available Accommodations
+                            {t('accommodations.title')}
                         </h2>
-                        <p className="text-green mt-2">Quality student housing vetted for comfort and proximity.</p>
+                        <p className="text-green mt-2">{t('accommodations.subtitle')}</p>
                     </div>
                     <div className="h-[2px] flex-grow mx-8 bg-grey-goose/20 hidden md:block mb-4"></div>
                 </div>
@@ -73,7 +67,7 @@ export default function ApartmentGrid() {
                                 />
                                 {/* Price Tag */}
                                 <div className="absolute bottom-4 left-4 bg-black-metal text-white px-4 py-2 rounded-xl font-bold">
-                                    €{apartment.price}<span className="text-xs font-normal opacity-80">/mo</span>
+                                    €{apartment.price}<span className="text-xs font-normal opacity-80">{t('accommodations.per_mo')}</span>
                                 </div>
                                 {/* Status Badge */}
                                 <div className="absolute top-4 right-4 bg-pastel-green/90 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -102,11 +96,11 @@ export default function ApartmentGrid() {
                                     </div>
                                     <div className="flex items-center gap-2 text-black-metal/70">
                                         <Bed size={16} className="text-whishkey-orange" />
-                                        <span className="text-sm font-medium">{apartment.bedrooms} Bed</span>
+                                        <span className="text-sm font-medium">{apartment.bedrooms} {t('accommodations.bed')}</span>
                                     </div>
                                     <div className="flex items-center gap-2 text-black-metal/70">
                                         <Bath size={16} className="text-whishkey-orange" />
-                                        <span className="text-sm font-medium">{apartment.bathrooms} Bath</span>
+                                        <span className="text-sm font-medium">{apartment.bathrooms} {t('accommodations.bath')}</span>
                                     </div>
                                 </div>
 
@@ -115,7 +109,7 @@ export default function ApartmentGrid() {
                                     <button
                                         className="w-full bg-white-smoke text-black-metal group-hover:bg-orange group-hover:text-white py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2"
                                     >
-                                        View Details
+                                        {t('accommodations.view_details')}
                                         <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
                                     </button>
                                 </div>
@@ -125,7 +119,7 @@ export default function ApartmentGrid() {
                 </div>
             </div>
 
-            {/* Modal */}
+            {/* Modal - It will automatically show translated content passed via props */}
             {selectedApartment && (
                 <ApartmentModal
                     apartment={selectedApartment}

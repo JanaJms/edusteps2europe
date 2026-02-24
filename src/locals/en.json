@@ -172,5 +172,28 @@
                 }
             }
         }
+    },
+    "accommodations": {
+        "title": "Available Accommodations",
+        "subtitle": "Quality student housing vetted for comfort and proximity.",
+        "per_mo": "/mo",
+        "bed": "Bed",
+        "bath": "Bath",
+        "view_details": "View Details",
+        "studio_1": {
+            "title": "Furnished Studio",
+            "location": "Boulogne Billancourt - West Paris near Porte Saint Cloud, Rue Émile Landrin - Metro Marcel Sembat line 9 (2 mins)",
+            "description": "Very well-designed and functional furnished studio located on the second floor of an old town-house style building. Fully equipped for student life.",
+            "availability": "Available Now",
+            "amenities": [
+                "WiFi Included",
+                "Fully Furnished",
+                "Utilities Included",
+                "Electricity subscription included",
+                "APL eligible",
+                "Second floor",
+                "Near metro"
+            ]
+        }
     }
 }

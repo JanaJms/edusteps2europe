@@ -172,5 +172,28 @@
                 }
             }
         }
+    },
+    "accommodations": {
+        "title": "Logements Disponibles",
+        "subtitle": "Logements étudiants de qualité sélectionnés pour leur confort et leur proximité.",
+        "per_mo": "/mois",
+        "bed": "Chambre",
+        "bath": "Sdb",
+        "view_details": "Voir les détails",
+        "studio_1": {
+            "title": "Studio Meublé",
+            "location": "Boulogne Billancourt - Ouest Paris vers porte Saint Cloud, Rue Émile Landrin - Métro Marcel Sembat ligne 9 (2 mins)",
+            "description": "Studio meublé très bien conçu et fonctionnel situé au deuxième étage d'un immeuble de style ancien. Entièrement équipé pour la vie étudiante.",
+            "availability": "Disponible immédiatement",
+            "amenities": [
+                "WiFi Inclus",
+                "Entièrement Meublé",
+                "Charges Comprises",
+                "Abonnement Électricité Inclus",
+                "Éligible APL",
+                "Deuxième étage",
+                "Proche métro"
+            ]
+        }
     }
 }
