@@ -50,5 +50,32 @@
         "description_2": "Demandez-leur ce que c'est vraiment — logement, cours, choix d'une ville, amitiés, tout.",
         "button_text": "Prendre RDV avec un alumni d'EDUSTEPS2EUROPE",
         "whatsapp_message": "Bonjour, je souhaite prendre rendez-vous avec un alumni"
+    },
+    "about_values": {
+        "main_title": "Nos valeurs fondamentales",
+        "v1": {
+            "title": "Centré sur l'étudiant",
+            "description": "Nous plaçons les étudiants au cœur de tout ce que nous faisons — en écoutant, comprenant et répondant à leurs besoins et rêves uniques."
+        },
+        "v2": {
+            "title": "Confiance et Transparence",
+            "description": "Nous croyons aux conseils honnêtes, aux processus clairs et à une communication ouverte à chaque étape."
+        },
+        "v3": {
+            "title": "Expertise et Empathie",
+            "description": "Notre équipe combine connaissances professionnelles et expérience personnelle, offrant des conseils à la fois précis et sincères."
+        },
+        "v4": {
+            "title": "Soutien Local, Portée Mondiale",
+            "description": "Nous comblons le fossé entre votre pays d'origine et la France grâce à une assistance sur le terrain et une compréhension internationale."
+        },
+        "v5": {
+            "title": "Engagement envers la réussite",
+            "description": "Nous ne vous aidons pas seulement à arriver en France — nous restons à vos côtés pour nous assurer que votre première année est stable, sûre et pleine de potentiel."
+        },
+        "v6": {
+            "title": "Adaptabilité et Croissance",
+            "description": "Nous améliorons continuellement nos services en fonction des retours, des besoins changeants et de l'évolution de l'expérience étudiante."
+        }
     }
 }

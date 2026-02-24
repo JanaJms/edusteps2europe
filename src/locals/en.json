@@ -50,5 +50,32 @@
         "description_2": "Ask them what it's really like — housing, classes, choosing a city, making friends, anything.",
         "button_text": "Book a call with an EDUSTEPS2EUROPE alumni",
         "whatsapp_message": "Hello, I want to book a call with an alumni"
+    },
+    "about_values": {
+        "main_title": "Our core values",
+        "v1": {
+            "title": "Student-Centric",
+            "description": "We place students at the heart of everything we do—listening, understanding, and responding to their unique needs and dreams."
+        },
+        "v2": {
+            "title": "Trust & Transparency",
+            "description": "We believe in honest advice, clear processes, and open communication every step of the way."
+        },
+        "v3": {
+            "title": "Expertise with Empathy",
+            "description": "Our team combines professional knowledge with personal experience, providing guidance that is both accurate and heartfelt."
+        },
+        "v4": {
+            "title": "Local Support, Global Reach",
+            "description": "We bridge the gap between your home country and France with on-the-ground assistance and international understanding."
+        },
+        "v5": {
+            "title": "Commitment to Success",
+            "description": "We don’t just help you get to France—we stay by your side to make sure your first year is stable, secure, and full of potential."
+        },
+        "v6": {
+            "title": "Adaptability & Growth",
+            "description": "We continuously improve our services based on feedback, changing needs, and the evolving student experience."
+        }
     }
 }
