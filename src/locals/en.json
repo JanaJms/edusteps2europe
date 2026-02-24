@@ -82,5 +82,95 @@
         "title_part1": "Our vision is to transform",
         "title_part2": "your study abroad experience",
         "description": "And become the most trusted, student-focused support platform for international students in France. We aim to make studying abroad a well-guided, stress-free, and rewarding journey. By offering personalized resources, expert guidance, and a supportive community, we empower students to thrive academically and personally in their new environment."
+    },
+    "faq": {
+        "hero_title": "Frequently Asked Questions",
+        "hero_subtitle": "Everything you need to know about our services and administrative procedures in France.",
+        "sections": {
+            "general": {
+                "title": "General texts about Support",
+                "q1": {
+                    "q": "How can you help us?",
+                    "a": "We assist you at every stage of your settlement in France: visa application, housing search, social security registration, opening a bank account, CAF (housing aid) procedures, insurance, and more. Our goal is to simplify your life and secure all your administrative processes."
+                },
+                "q2": {
+                    "q": "I’ve already been in France for 6 months. Can you still help me?",
+                    "a": "Of course. Our services are available for all international students, whether you are already in France or preparing your arrival from abroad. Do not hesitate to contact us via the “Contact Us” section."
+                },
+                "q3": {
+                    "q": "What are the advantages of going through you rather than handling the procedures alone?",
+                    "a": "We save you time, help you avoid common mistakes, and provide personalized advice at each step. Thanks to our expertise, your administrative procedures are faster and more efficient."
+                },
+                "q4": {
+                    "q": "Is your support service paid? What are the prices?",
+                    "a": "Yes, our support services are paid. We offer different packages depending on your needs, such as visa assistance, housing support, or complete administrative procedures. Prices are transparent and affordable. Please check our \"Pricing\" page for details."
+                },
+                "q5": {
+                    "q": "How can I contact you for a first inquiry?",
+                    "a": "You can reach us through our online form, by email, or directly via WhatsApp."
+                }
+            },
+            "visa": {
+                "title": "Visa and Residence Permit",
+                "q1": {
+                    "q": "What types of visas for France do you assist with?",
+                    "a": "We mainly assist with student visas, but also with short-stay visas."
+                },
+                "q2": {
+                    "q": "Can you help me renew my student residence permit?",
+                    "a": "Yes, we guide you through the renewal process, including booking an appointment, preparing the file, and submitting it online via ANEF."
+                },
+                "q3": {
+                    "q": "How long does it take to obtain a French student visa?",
+                    "a": "The processing time varies between 2 and 6 weeks depending on your country and the time of year. We help you prepare your file to avoid delays. However, we are not responsible for the processing time or the outcome."
+                },
+                "q4": {
+                    "q": "What documents do I need for my visa application?",
+                    "a": "Once your request is submitted to the Visa office, you will receive the official list of required documents."
+                },
+                "q5": {
+                    "q": "What should I do if my visa is refused?",
+                    "a": "We review the reasons for the refusal with you and help you, as far as possible, to complete and strengthen your file."
+                }
+            },
+            "housing": {
+                "title": "Housing",
+                "q1": {
+                    "q": "Do you help students find accommodation in France?",
+                    "a": "Yes, we help you find housing adapted to your budget and city of study, whether in student residences, shared housing, or private rentals."
+                },
+                "q2": {
+                    "q": "Can I get a housing certificate for my visa application?",
+                    "a": "Yes, once you have secured accommodation, you can request a housing certificate. A guarantor residing in France with a minimum income of three times the rent is usually required. We suggest alternative solutions if needed."
+                },
+                "q3": {
+                    "q": "Do you help with APL or other housing aid applications?",
+                    "a": "Yes. We assist you in creating your CAF account and applying for housing aid (APL/ALS), step by step."
+                }
+            },
+            "procedures": {
+                "title": "CAF, Social Security, Bank & Other Procedures",
+                "q1": {
+                    "q": "Do you help with student social security registration?",
+                    "a": "Yes, we guide you in creating an account on the official health insurance website and completing your registration."
+                },
+                "q2": {
+                    "q": "Do you help with opening a bank account in France?",
+                    "a": "Yes, we provide a list of nearby banks, required documents, and support up to booking an appointment, even before arrival."
+                },
+                "q3": {
+                    "q": "Do you help with CAF housing aid applications?",
+                    "a": "Yes, we help you prepare all required documents and complete the online application for CAF housing aid."
+                },
+                "q4": {
+                    "q": "Can you help with housing and liability insurance?",
+                    "a": "Yes, we assist you in finding suitable housing and liability insurance."
+                },
+                "q5": {
+                    "q": "How do I pay the CEVEC?",
+                    "a": "You must register on the official website cevec.etudiant.gouv.fr to make the payment. Proof of payment is mandatory for university registration."
+                }
+            }
+        }
     }
 }

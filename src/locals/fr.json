@@ -82,5 +82,95 @@
         "title_part1": "Notre vision est de transformer",
         "title_part2": "votre expérience d'études à l'étranger",
         "description": "Et de devenir la plateforme d'accompagnement la plus fiable et centrée sur l'étudiant pour les internationaux en France. Nous visons à faire des études à l'étranger un voyage bien guidé, sans stress et gratifiant. En proposant des ressources personnalisées, des conseils d'experts et une communauté de soutien, nous donnons aux étudiants les moyens de s'épanouir académiquement et personnellement dans leur nouvel environnement."
+    },
+    "faq": {
+        "hero_title": "Foire Aux Questions",
+        "hero_subtitle": "Tout ce que vous devez savoir sur nos services et les procédures administratives en France.",
+        "sections": {
+            "general": {
+                "title": "Informations générales sur l'accompagnement",
+                "q1": {
+                    "q": "Comment pouvez-vous nous aider ?",
+                    "a": "Nous vous accompagnons à chaque étape de votre installation en France : demande de visa, recherche de logement, inscription à la sécurité sociale, ouverture d'un compte bancaire, démarches CAF, assurances, etc. Notre objectif est de vous simplifier la vie."
+                },
+                "q2": {
+                    "q": "Je suis déjà en France depuis 6 mois. Pouvez-vous quand même m'aider ?",
+                    "a": "Bien sûr. Nos services sont disponibles pour tous les étudiants internationaux, que vous soyez déjà en France ou que vous prépariez votre arrivée. N'hésitez pas à nous contacter."
+                },
+                "q3": {
+                    "q": "Quels sont les avantages de passer par vous ?",
+                    "a": "Nous vous faisons gagner du temps, vous évitons les erreurs courantes et fournissons des conseils personnalisés. Grâce à notre expertise, vos démarches sont plus rapides et efficaces."
+                },
+                "q4": {
+                    "q": "Votre service est-il payant ? Quels sont les tarifs ?",
+                    "a": "Oui, nos services sont payants. Nous proposons différentes formules selon vos besoins (aide au visa, logement, procédures complètes). Nos tarifs sont transparents et abordables."
+                },
+                "q5": {
+                    "q": "Comment puis-je vous contacter pour une première demande ?",
+                    "a": "Vous pouvez nous joindre via notre formulaire en ligne, par e-mail ou directement via WhatsApp."
+                }
+            },
+            "visa": {
+                "title": "Visa et Titre de Séjour",
+                "q1": {
+                    "q": "Pour quels types de visas aidez-vous ?",
+                    "a": "Nous aidons principalement pour les visas étudiants, mais aussi pour les visas de court séjour."
+                },
+                "q2": {
+                    "q": "Pouvez-vous m'aider à renouveler mon titre de séjour ?",
+                    "a": "Oui, nous vous guidons dans le processus de renouvellement, de la prise de rendez-vous à la soumission en ligne via l'ANEF."
+                },
+                "q3": {
+                    "q": "Combien de temps faut-il pour obtenir un visa étudiant ?",
+                    "a": "Le délai varie entre 2 et 6 semaines selon votre pays et la période de l'année. Nous vous aidons à préparer votre dossier pour éviter les retards."
+                },
+                "q4": {
+                    "q": "De quels documents ai-je besoin pour mon visa ?",
+                    "a": "Une fois votre demande soumise au bureau des visas, vous recevrez la liste officielle des documents requis."
+                },
+                "q5": {
+                    "q": "Que faire si mon visa est refusé ?",
+                    "a": "Nous analysons les motifs du refus avec vous et vous aidons, dans la mesure du possible, à compléter et renforcer votre dossier."
+                }
+            },
+            "housing": {
+                "title": "Logement",
+                "q1": {
+                    "q": "Aidez-vous à trouver un logement ?",
+                    "a": "Oui, nous vous aidons à trouver un logement adapté à votre budget et à votre ville d'études (résidences, colocations ou locations privées)."
+                },
+                "q2": {
+                    "q": "Puis-je obtenir un justificatif d'hébergement pour mon visa ?",
+                    "a": "Oui, une fois le logement sécurisé, vous pouvez obtenir une attestation. Un garant résidant en France est généralement requis. Nous proposons des alternatives si besoin."
+                },
+                "q3": {
+                    "q": "Aidez-vous pour les demandes d'APL ?",
+                    "a": "Oui. Nous vous accompagnons dans la création de votre compte CAF et la demande d'aide au logement, étape par étape."
+                }
+            },
+            "procedures": {
+                "title": "CAF, Sécurité Sociale, Banque & Autres",
+                "q1": {
+                    "q": "Aidez-vous pour l'inscription à la sécurité sociale ?",
+                    "a": "Oui, nous vous guidons pour créer votre compte sur le site officiel de l'Assurance Maladie et finaliser votre inscription."
+                },
+                "q2": {
+                    "q": "Aidez-vous pour l'ouverture d'un compte bancaire ?",
+                    "a": "Oui, nous fournissons la liste des banques proches, les documents requis et l'aide pour la prise de RDV, même avant l'arrivée."
+                },
+                "q3": {
+                    "q": "Aidez-vous pour les dossiers CAF ?",
+                    "a": "Oui, nous vous aidons à préparer tous les documents et à remplir la demande en ligne."
+                },
+                "q4": {
+                    "q": "Aidez-vous pour l'assurance habitation ?",
+                    "a": "Oui, nous vous assistons pour trouver une assurance habitation et responsabilité civile adaptée."
+                },
+                "q5": {
+                    "q": "Comment payer la CVEC ?",
+                    "a": "Vous devez vous inscrire sur cevec.etudiant.gouv.fr pour effectuer le paiement. C'est obligatoire pour votre inscription universitaire."
+                }
+            }
+        }
     }
 }
