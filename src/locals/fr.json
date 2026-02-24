@@ -276,5 +276,12 @@
         "title_part1": "Tout ce dont votre enfant a besoin",
         "title_part2": "en un seul endroit",
         "description": "Des documents à la vie quotidienne, nos services couvrent chaque étape du voyage de votre enfant pour étudier en France."
+    },
+    "promo": {
+        "title_part1": "Découvrez nos formules flexibles qui combinent ces services pour vous faire",
+        "title_highlight": "gagner du temps et de l'argent.",
+        "btn_compare": "Comparer les formules",
+        "btn_quote": "Demander un devis personnalisé",
+        "whatsapp_message": "Bonjour, je souhaite obtenir un devis personnalisé"
     }
 }

@@ -1,10 +1,13 @@
+import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // 1. Import hook
 import Button from '../../buttons/Button';
 import { chatOnWhatsapp } from '../../../utils/utils';
 import { useNavigate } from 'react-router-dom';
 
 export default function Promo() {
-    const navigate = useNavigate()
+    const { t } = useTranslation(); // 2. Initialize hook
+    const navigate = useNavigate();
 
     return (
         <section className="px-4 py-10 md:px-10 lg:px-20">
@@ -18,21 +21,21 @@ export default function Promo() {
                     {/* Left Content */}
                     <div className="w-full md:max-w-[70%] flex flex-col gap-y-6 md:gap-y-10 items-center md:items-start text-center md:text-left">
                         <h2 className="text-[26px] md:text-[42px] lg:text-[52px] leading-tight font-playfair text-[#2d2d2d] font-semibold">
-                            Explore our flexible packages that combine these services to <br className="hidden lg:block" />
-                            <span className="text-[#d97e5d]">save time and money.</span>
+                            {t('promo.title_part1')} <br className="hidden lg:block" />
+                            <span className="text-[#d97e5d]">{t('promo.title_highlight')}</span>
                         </h2>
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-4 font-poppins font-medium w-full sm:w-auto">
                             <Button
                                 onClick={() => { navigate("/packages") }}
                                 customizeStyle="bg-[#ffa66b] text-white px-8 py-4 rounded-xl shadow-md hover:bg-[#f89552] transition-all w-full sm:w-auto text-center"
-                                buttonText="Compare Packages"
+                                buttonText={t('promo.btn_compare')}
                             />
 
                             <Button
-                                onClick={() => chatOnWhatsapp("Hello, I want to get a custom quote")}
+                                onClick={() => chatOnWhatsapp(t('promo.whatsapp_message'))} // 3. Localized WA message
                                 customizeStyle="bg-white/30  backdrop-blur-md border border-white/20 text-green-cyan px-8 py-4 rounded-xl font-poppins font-semibold hover:bg-white/20 transition-all w-full sm:w-auto text-center"
-                                buttonText="Get a Custom Quote"
+                                buttonText={t('promo.btn_quote')}
                             />
                         </div>
                     </div>
