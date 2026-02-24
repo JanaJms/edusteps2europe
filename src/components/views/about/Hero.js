@@ -1,10 +1,13 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'; // 1. Import hook
 import bg from '../../../assets/images/about-bg.png'
 import about1 from '../../../assets/images/about-1.png'
 import about2 from '../../../assets/images/french.png'
 import about3 from '../../../assets/images/about-3.png'
 
 export default function Hero() {
+    const { t } = useTranslation(); // 2. Initialize hook
+
     return (
         /* Increased bottom margin (mb-32) to make room for the overlapping images */
         <div className='relative w-full mb-32 md:mb-48 lg:mb-64'>
@@ -21,16 +24,16 @@ export default function Hero() {
                 {/* Text content */}
                 <div className="relative z-10 text-center flex flex-col gap-6 md:gap-10 px-6 md:px-16 max-w-4xl pt-10 pb-20">
                     <h1 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-md">
-                        About us
+                        {t('about_hero.title')}
                     </h1>
-                    <p className="text-base md:text-xl leading-relaxed drop-shadow-sm font-poppins max-w-2xl">
-                        We know that sending your child to study in another country is a big decision,
-                        full of excitement, but also uncertainty.
+                    <div className="text-base md:text-xl leading-relaxed drop-shadow-sm font-poppins max-w-2xl mx-auto">
+                        <p>
+                            {t('about_hero.description')}
+                        </p>
                         <span className="block mt-4 md:mt-6 text-orange font-semibold">
-                            At EduSteps2Europe, we give families peace of mind and students the support they
-                            need to thrive in France.
+                            {t('about_hero.highlight')}
                         </span>
-                    </p>
+                    </div>
                 </div>
 
                 {/* Floating Images Container */}

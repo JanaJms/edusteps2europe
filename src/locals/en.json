@@ -30,5 +30,10 @@
         "footer_title": "You are not alone in this journey.",
         "footer_text": "We are here, as professionals, and above all, as parents.",
         "signature": "— THE FOUNDERS"
+    },
+    "about_hero": {
+        "title": "About us",
+        "description": "We know that sending your child to study in another country is a big decision, full of excitement, but also uncertainty.",
+        "highlight": "At EduSteps2Europe, we give families peace of mind and students the support they need to thrive in France."
     }
 }

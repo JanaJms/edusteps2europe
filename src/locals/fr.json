@@ -30,5 +30,10 @@
         "footer_title": "Vous n'êtes pas seul dans ce voyage.",
         "footer_text": "Nous sommes là, en tant que professionnels, et surtout, en tant que parents.",
         "signature": "— LES FONDATEURS"
+    },
+    "about_hero": {
+        "title": "À propos de nous",
+        "description": "Nous savons que l'envoi de votre enfant étudier dans un autre pays est une décision importante, pleine d'excitation, mais aussi d'incertitude.",
+        "highlight": "Chez EduSteps2Europe, nous offrons aux familles la tranquillité d'esprit et aux étudiants le soutien dont ils ont besoin pour s'épanouir en France."
     }
 }
