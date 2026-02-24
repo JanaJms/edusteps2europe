@@ -18,5 +18,17 @@
         "accommodations": "Accommodations",
         "faq": "FAQ",
         "contact": "Contact"
+    },
+    "founders": {
+        "title": "Founders’ Message",
+        "quote": "\"As parents, we understand that sending your child to study abroad is not just an academic decision—it is an emotional one.\"",
+        "para1": "We have lived this journey ourselves. We have faced the stress of paperwork, visas, residency permits, housing, and medical insurance. We have felt the anxiety of navigating an unfamiliar system while wanting only one thing: to secure the best future for our children.",
+        "para2_bold": "This is why we created this company.",
+        "para3": "What once felt overwhelming for our own families became the reason we chose to support yours. Our mission is to stand beside parents and students, simplifying every step of the journey to studying in France, with care, transparency, and responsibility.",
+        "para4_start": "We do not see students as files or applications.",
+        "para4_orange": "We see them as children entrusted to us by their parents—just as ours once were.",
+        "footer_title": "You are not alone in this journey.",
+        "footer_text": "We are here, as professionals, and above all, as parents.",
+        "signature": "— THE FOUNDERS"
     }
 }

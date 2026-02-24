@@ -18,5 +18,17 @@
         "accommodations": "Logements",
         "faq": "FAQ",
         "contact": "Contact"
+    },
+    "founders": {
+        "title": "Message des Fondateurs",
+        "quote": "\"En tant que parents, nous comprenons que l'envoi de votre enfant étudier à l'étranger n'est pas seulement une décision académique—c'est une décision émotionnelle.\"",
+        "para1": "Nous avons vécu ce voyage nous-mêmes. Nous avons fait face au stress des formalités administratives, des visas, des titres de séjour, du logement et de l'assurance médicale. Nous avons ressenti l'anxiété de naviguer dans un système inconnu tout en ne souhaitant qu'une seule chose : assurer le meilleur avenir à nos enfants.",
+        "para2_bold": "C’est pourquoi nous avons créé cette entreprise.",
+        "para3": "Ce qui semblait autrefois accablant pour nos propres familles est devenu la raison pour laquelle nous avons choisi de soutenir la vôtre. Notre mission est de nous tenir aux côtés des parents et des étudiants, en simplifiant chaque étape du voyage pour étudier en France, avec soin, transparence et responsabilité.",
+        "para4_start": "Nous ne voyons pas les étudiants comme des dossiers ou des candidatures.",
+        "para4_orange": "Nous les voyons comme des enfants qui nous sont confiés par leurs parents—tout comme les nôtres l'ont été autrefois.",
+        "footer_title": "Vous n'êtes pas seul dans ce voyage.",
+        "footer_text": "Nous sommes là, en tant que professionnels, et surtout, en tant que parents.",
+        "signature": "— LES FONDATEURS"
     }
 }
