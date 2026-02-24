@@ -9,5 +9,14 @@
         "nav_book": "Prendre RDV",
         "copyright": "© 2025 EDUSTEPS2EUROPE. Tous droits réservés.",
         "designer": "Conçu avec soin pour les futurs étudiants internationaux 🌍"
+    },
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "packages": "Formules",
+        "services": "Services",
+        "accommodations": "Logements",
+        "faq": "FAQ",
+        "contact": "Contact"
     }
 }

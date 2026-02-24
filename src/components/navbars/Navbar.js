@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { MenuIcon, X } from "lucide-react";
 import logo from "../../assets/images/logo.png";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+    const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(true);
     const [isAtTop, setIsAtTop] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -38,7 +40,7 @@ export default function Navbar() {
 
         window.addEventListener("scroll", controlNavbar);
         return () => window.removeEventListener("scroll", controlNavbar);
-    }, [lastScrollY, isMenuOpen]); // Added isMenuOpen as dependency
+    }, [lastScrollY, isMenuOpen]);
 
     // 2. Body Lock: Prevent background scrolling when mobile menu is open
     useEffect(() => {
@@ -54,14 +56,15 @@ export default function Navbar() {
         setIsMenuOpen(false);
     }, [location.pathname]);
 
+    // 3. Updated data to use keys from JSON
     const navbarData = [
-        { id: "home", label: "Home", link: "/" },
-        { id: "about", label: "About", link: "/about" },
-        { id: "packages", label: "Packages", link: "/packages" },
-        { id: "services", label: "Services", link: "/services" },
-        { id: "accomodations", label: "Accomodations", link: "/accomodations" },
-        { id: "faq", label: "FAQ", link: "/faq" },
-        { id: "contact", label: "Contact", link: "/contact" }
+        { id: "home", label: "nav.home", link: "/" },
+        { id: "about", label: "nav.about", link: "/about" },
+        { id: "packages", label: "nav.packages", link: "/packages" },
+        { id: "services", label: "nav.services", link: "/services" },
+        { id: "accommodations", label: "nav.accommodations", link: "/accommodations" },
+        { id: "faq", label: "nav.faq", link: "/faq" },
+        { id: "contact", label: "nav.contact", link: "/contact" }
     ];
 
     return (
@@ -87,7 +90,7 @@ export default function Navbar() {
                                     ${location.pathname === item.link ? "text-orange" : "text-black-metal hover:text-orange"}
                                 `}
                             >
-                                {item.label}
+                                {t(item.label)} {/* 4. Translate here */}
                                 <span className={`absolute -bottom-1 left-0 h-[2px] bg-orange transition-all duration-300 
                                     ${location.pathname === item.link ? "w-full" : "w-0 group-hover:w-full"}`}
                                 />
@@ -111,12 +114,13 @@ export default function Navbar() {
                 onClose={() => setIsMenuOpen(false)}
                 data={navbarData}
                 currentPath={location.pathname}
+                t={t} // Pass translation function to child
             />
         </>
     );
 }
 
-function MobileMenu({ isOpen, onClose, data, currentPath }) {
+function MobileMenu({ isOpen, onClose, data, currentPath, t }) {
     return (
         // The parent container
         <div 
@@ -135,11 +139,7 @@ function MobileMenu({ isOpen, onClose, data, currentPath }) {
             {/* 2. The Drawer */}
             <div className={`
                 absolute top-0 right-0 h-full w-[80%] max-w-[320px] bg-white shadow-2xl 
-                flex flex-col 
-                /* IMPORTANT FIXES BELOW */
-                overflow-hidden 
-                will-change-transform
-                transition-all duration-300 ease-in-out
+                flex flex-col overflow-hidden will-change-transform transition-all duration-300 ease-in-out
                 ${isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
             `}>
                 
@@ -165,7 +165,7 @@ function MobileMenu({ isOpen, onClose, data, currentPath }) {
                                     : "text-gray-700 hover:bg-gray-100"}
                             `}
                         >
-                            {item.label}
+                            {t(item.label)}
                         </Link>
                     ))}
                 </nav>
