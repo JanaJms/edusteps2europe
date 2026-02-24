@@ -1,11 +1,13 @@
 import React from 'react';
 import { Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { chatOnWhatsapp, openMail } from '../../utils/utils';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-blue/60 pt-10">
-      {/* Main Footer Container with Large Rounded Top */}
       <div className="bg-white rounded-t-[50px] md:rounded-t-[80px] px-6 md:px-12 lg:px-20 pt-16 pb-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -16,26 +18,38 @@ export default function Footer() {
                 EDUSTEPS2EUROPE
               </h2>
               <p className="font-playfair italic text-lg text-black-metal/80 leading-relaxed max-w-[280px]">
-                Supporting students & families on their journey to success abroad.
+                {t('footer.tagline')}
               </p>
             </div>
 
             {/* Column 2: Navigation 1 */}
             <div className="flex flex-col gap-4">
-              <a href="/" className="text-black-metal/70 hover:text-orange transition-colors">Home</a>
-              <a href="/services" className="text-black-metal/70 hover:text-orange transition-colors">Services</a>
+              <a href="/" className="text-black-metal/70 hover:text-orange transition-colors">
+                {t('footer.nav_home')}
+              </a>
+              <a href="/services" className="text-black-metal/70 hover:text-orange transition-colors">
+                {t('footer.nav_services')}
+              </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://edusteps2europe.com/uploads/Guide_Administrative_Procedures_International_Students_France.pdf"
-                className="text-black-metal/70 hover:text-orange transition-colors">Free Guide</a>
+                className="text-black-metal/70 hover:text-orange transition-colors">
+                {t('footer.nav_guide')}
+              </a>
             </div>
 
             {/* Column 3: Navigation 2 */}
             <div className="flex flex-col gap-4">
-              <a href="/contact" className="text-black-metal/70 hover:text-orange transition-colors">Contact Us</a>
-              <a href="/faq" className="text-black-metal/70 hover:text-orange transition-colors">FAQ</a>
-              <a onClick={() => chatOnWhatsapp()} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">Book a free Call</a>
+              <a href="/contact" className="text-black-metal/70 hover:text-orange transition-colors">
+                {t('footer.nav_contact')}
+              </a>
+              <a href="/faq" className="text-black-metal/70 hover:text-orange transition-colors">
+                {t('footer.nav_faq')}
+              </a>
+              <a onClick={() => chatOnWhatsapp()} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">
+                {t('footer.nav_book')}
+              </a>
             </div>
 
             {/* Column 4: Contact & Socials */}
@@ -51,7 +65,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* Social Icons */}
+              {/* Social Icons - Usually these don't change by language */}
               <div className="flex items-center gap-4">
                 <a href="#" className="p-2 rounded-full hover:bg-orange/10 transition-colors text-black-metal">
                   <Facebook size={22} fill="currentColor" />
@@ -71,9 +85,9 @@ export default function Footer() {
       {/* Bottom Copyright Bar */}
       <div className="bg-light-orange py-4 px-6 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-black-metal/80 font-medium">
-          <p>© 2025 EDUSTEPS2EUROPE. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
           <p className="flex items-center gap-1">
-            Designed with care for future global students 🌍
+            {t('footer.designer')}
           </p>
         </div>
       </div>
