@@ -225,5 +225,22 @@
     "contact_hero": {
         "title": "Contact Us",
         "subtitle": "We’re here to help you take the next step with confidence."
+    },
+    "contact_section": {
+        "header": "Whether you're a parent with questions or a student ready to get started, our team is just a message away",
+        "card_call": "Call Us",
+        "card_email": "Email Us",
+        "card_visit": "Visit Us",
+        "payment": {
+            "verified": "Verified Bank Account",
+            "title_main": "Secure",
+            "title_sub": "Payment Details",
+            "label_bank": "Bank Name",
+            "label_account": "Account Name",
+            "label_swift": "SWIFT/BIC",
+            "label_iban": "IBAN Number",
+            "note_bold": "Note:",
+            "note_text": "Include your student reference number in the payment description. Verify details by contacting us directly before transfer."
+        }
     }
 }

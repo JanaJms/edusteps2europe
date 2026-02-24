@@ -225,5 +225,22 @@
     "contact_hero": {
         "title": "Contactez-nous",
         "subtitle": "Nous sommes là pour vous aider à franchir la prochaine étape en toute confiance."
+    },
+    "contact_section": {
+        "header": "Que vous soyez un parent avec des questions ou un étudiant prêt à commencer, notre équipe est à un message de vous.",
+        "card_call": "Appelez-nous",
+        "card_email": "Envoyez un e-mail",
+        "card_visit": "Rendez-nous visite",
+        "payment": {
+            "verified": "Compte Bancaire Vérifié",
+            "title_main": "Détails de",
+            "title_sub": "Paiement Sécurisé",
+            "label_bank": "Nom de la banque",
+            "label_account": "Nom du compte",
+            "label_swift": "SWIFT/BIC",
+            "label_iban": "Numéro IBAN",
+            "note_bold": "Note :",
+            "note_text": "Incluez votre numéro de référence étudiant dans la description du paiement. Vérifiez les détails en nous contactant directement avant le transfert."
+        }
     }
 }
