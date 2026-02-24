@@ -171,7 +171,10 @@
                     "a": "You must register on the official website cevec.etudiant.gouv.fr to make the payment. Proof of payment is mandatory for university registration."
                 }
             }
-        }
+        },
+        "hero_title_part1": "Frequently Asked",
+        "hero_title_part2": "Questions",
+        "hero_img_alt": "FAQ Hero Illustration"
     },
     "accommodations": {
         "title": "Available Accommodations",
