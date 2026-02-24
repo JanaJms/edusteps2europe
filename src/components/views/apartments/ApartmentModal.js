@@ -1,9 +1,11 @@
 import { X, MapPin, Calendar, ChevronLeft, ChevronRight, Maximize, Bed, Bath, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // 1. Import hook
 import ImageWithFallback from '../../cards/ImageWithFallback';
 import { chatOnWhatsapp } from '../../../utils/utils';
 
 export default function ApartmentModal({ apartment, onClose }) {
+    const { t } = useTranslation(); // 2. Initialize hook
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const nextImage = (e) => {
@@ -25,7 +27,6 @@ export default function ApartmentModal({ apartment, onClose }) {
                 className="relative w-full max-w-5xl h-full md:h-auto md:max-h-[95vh] overflow-y-auto rounded-none md:rounded-3xl shadow-2xl bg-white"
                 onClick={(e) => e.stopPropagation()}
             >
-                {/* Close Button - Floating */}
                 <button
                     onClick={onClose}
                     className="fixed top-4 right-4 z-[110] bg-white/90 hover:bg-white text-black-metal p-2 rounded-full shadow-lg transition-transform hover:scale-110"
@@ -34,7 +35,7 @@ export default function ApartmentModal({ apartment, onClose }) {
                 </button>
 
                 <div className="flex flex-col">
-                    {/* 1. Image Gallery Section */}
+                    {/* Gallery Section */}
                     <div className="relative h-[40vh] lg:h-[60vh] bg-grey-goose/20">
                         <ImageWithFallback
                             src={apartment?.images?.[currentImageIndex]}
@@ -42,7 +43,6 @@ export default function ApartmentModal({ apartment, onClose }) {
                             className="w-full h-full object-contain"
                         />
 
-                        {/* Navigation Arrows */}
                         {apartment?.images?.length > 1 && (
                             <>
                                 <div className="absolute inset-0 flex items-center justify-between px-4">
@@ -53,7 +53,6 @@ export default function ApartmentModal({ apartment, onClose }) {
                                         <ChevronRight size={24} />
                                     </button>
                                 </div>
-                                {/* Modern Progress Indicators */}
                                 <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2">
                                     {apartment?.images?.map((_, i) => (
                                         <div
@@ -66,7 +65,7 @@ export default function ApartmentModal({ apartment, onClose }) {
                         )}
                     </div>
 
-                    {/* 2. Content Section */}
+                    {/* Content Section */}
                     <div className="p-6 md:p-10">
                         <div className="flex flex-col lg:flex-row justify-between items-start gap-6 mb-8">
                             <div className="space-y-2 max-w-2xl">
@@ -79,18 +78,18 @@ export default function ApartmentModal({ apartment, onClose }) {
                                 </div>
                             </div>
                             <div className="bg-reddish-orange p-4 rounded-2xl min-w-[180px] w-full md:w-fit text-center">
-                                <p className="text-sm text-orange font-bold uppercase tracking-wider mb-1">Monthly Rent</p>
+                                <p className="text-sm text-orange font-bold uppercase tracking-wider mb-1">{t('accommodations.modal.monthly_rent')}</p>
                                 <p className="text-3xl font-bold text-black-metal">{apartment?.price}<span className="text-lg font-normal">€</span></p>
                             </div>
                         </div>
 
-                        {/* 3. Core Specs Grid */}
+                        {/* Core Specs Grid */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
                             {[
-                                { icon: <Maximize />, label: 'Size (m2)', value: apartment.size },
-                                { icon: <Bed />, label: 'Bedrooms', value: apartment.bedrooms },
-                                { icon: <Bath />, label: 'Bathrooms', value: apartment.bathrooms },
-                                { icon: <Calendar />, label: 'Available', value: apartment.availability },
+                                { icon: <Maximize />, label: t('accommodations.modal.size_label'), value: apartment.size + ' m²' },
+                                { icon: <Bed />, label: t('accommodations.modal.bedrooms_label'), value: apartment.bedrooms },
+                                { icon: <Bath />, label: t('accommodations.modal.bathrooms_label'), value: apartment.bathrooms },
+                                { icon: <Calendar />, label: t('accommodations.modal.available_label'), value: apartment.availability },
                             ].map((spec, i) => (
                                 <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-white-smoke border border-grey-goose/10">
                                     <div className="text-orange">{spec.icon}</div>
@@ -103,62 +102,60 @@ export default function ApartmentModal({ apartment, onClose }) {
                         </div>
 
                         <div className="grid lg:grid-cols-3 gap-10">
-                            {/* Left Column: Description & Amenities */}
                             <div className="lg:col-span-2 space-y-8">
                                 <div>
-                                    <h3 className="text-xl font-bold text-black-metal mb-4 flex items-center gap-2">
-                                        About this Property
+                                    <h3 className="text-xl font-bold text-black-metal mb-4 flex items-center gap-2 font-playfair">
+                                        {t('accommodations.modal.about_property')}
                                         <div className="h-[1px] flex-grow bg-grey-goose/20 ml-2" />
                                     </h3>
-                                    <p className="text-green leading-relaxed text-lg">
+                                    <p className="text-green leading-relaxed text-lg font-poppins">
                                         {apartment.description}
                                     </p>
                                 </div>
 
                                 <div>
-                                    <h3 className="text-xl font-bold text-black-metal mb-4 flex items-center gap-2">
-                                        Included Amenities
+                                    <h3 className="text-xl font-bold text-black-metal mb-4 flex items-center gap-2 font-playfair">
+                                        {t('accommodations.modal.amenities_title')}
                                         <div className="h-[1px] flex-grow bg-grey-goose/20 ml-2" />
                                     </h3>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                         {apartment.amenities.map((amenity, index) => (
                                             <div key={index} className="flex items-center gap-3 p-3 rounded-xl bg-reddish-orange/50 border border-reddish-orange">
                                                 <CheckCircle2 size={18} className="text-orange" />
-                                                <span className="text-sm font-medium text-black-metal">{amenity}</span>
+                                                <span className="text-sm font-medium text-black-metal font-poppins">{amenity}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Right Column: CTA & Notice */}
                             <div className="space-y-6">
                                 <div className="bg-white border-2 border-orange/10 p-6 rounded-3xl shadow-sm">
                                     <div className="flex items-start gap-4 mb-6">
                                         <div className="bg-orange/10 p-3 rounded-xl">
                                             <Calendar className="text-orange" />
                                         </div>
-                                        <p className="text-sm text-black-metal/80 leading-snug">
-                                            <strong className="block text-black-metal mb-1">Booking Notice</strong>
-                                            Rentals are facilitated via <strong>EduSteps2Europe</strong> for security.
-                                        </p>
+                                        <div className="text-sm text-black-metal/80 leading-snug font-poppins">
+                                            <strong className="block text-black-metal mb-1">{t('accommodations.modal.booking_notice')}</strong>
+                                            {t('accommodations.modal.notice_text')}
+                                        </div>
                                     </div>
 
                                     <button
-                                        onClick={() => chatOnWhatsapp(`Hello, I want to request a viewing to ${apartment?.title}`)}
+                                        onClick={() => chatOnWhatsapp(`${t('accommodations.modal.wa_request')}${apartment?.title}`)}
                                         className="w-full bg-orange text-white py-4 rounded-2xl font-bold shadow-lg shadow-orange/20 hover:bg-light-orange transition-all transform hover:-translate-y-1">
-                                        Request a Viewing
+                                        {t('accommodations.modal.request_viewing')}
                                     </button>
 
-                                    <p className="text-[11px] text-center text-green mt-4 italic">
-                                        Response time: usually within 24 hours
+                                    <p className="text-[11px] text-center text-green mt-4 italic font-poppins">
+                                        {t('accommodations.modal.response_time')}
                                     </p>
                                 </div>
 
                                 <div className="bg-blue/5 border border-blue/10 p-5 rounded-2xl">
-                                    <p className="text-xs text-blue font-bold uppercase tracking-widest mb-2">Need Help?</p>
-                                    <p className="text-sm text-black-metal/70">
-                                        Our student advisors are available to help you with the legal paperwork and APL eligibility.
+                                    <p className="text-xs text-blue font-bold uppercase tracking-widest mb-2 font-poppins">{t('accommodations.modal.need_help')}</p>
+                                    <p className="text-sm text-black-metal/70 font-poppins">
+                                        {t('accommodations.modal.advisor_text')}
                                     </p>
                                 </div>
                             </div>

@@ -194,6 +194,22 @@
                 "Second floor",
                 "Near metro"
             ]
+        },
+        "modal": {
+            "monthly_rent": "Monthly Rent",
+            "size_label": "Size (m2)",
+            "bedrooms_label": "Bedrooms",
+            "bathrooms_label": "Bathrooms",
+            "available_label": "Available",
+            "about_property": "About this Property",
+            "amenities_title": "Included Amenities",
+            "booking_notice": "Booking Notice",
+            "notice_text": "Rentals are facilitated via EduSteps2Europe for security.",
+            "request_viewing": "Request a Viewing",
+            "response_time": "Response time: usually within 24 hours",
+            "need_help": "Need Help?",
+            "advisor_text": "Our student advisors are available to help you with the legal paperwork and APL eligibility.",
+            "wa_request": "Hello, I want to request a viewing for: "
         }
     },
     "accommodation_hero": {

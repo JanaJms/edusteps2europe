@@ -194,6 +194,22 @@
                 "Deuxième étage",
                 "Proche métro"
             ]
+        },
+        "modal": {
+            "monthly_rent": "Loyer Mensuel",
+            "size_label": "Surface (m2)",
+            "bedrooms_label": "Chambres",
+            "bathrooms_label": "Salles de bain",
+            "available_label": "Disponibilité",
+            "about_property": "À propos de ce bien",
+            "amenities_title": "Équipements Inclus",
+            "booking_notice": "Note de réservation",
+            "notice_text": "Les locations sont facilitées par EduSteps2Europe pour plus de sécurité.",
+            "request_viewing": "Demander une visite",
+            "response_time": "Temps de réponse : généralement sous 24h",
+            "need_help": "Besoin d'aide ?",
+            "advisor_text": "Nos conseillers étudiants sont disponibles pour vous aider avec les démarches légales et l'éligibilité APL.",
+            "wa_request": "Bonjour, je souhaite demander une visite pour le logement : "
         }
     },
     "accommodation_hero": {
