@@ -77,5 +77,10 @@
             "title": "Adaptabilité et Croissance",
             "description": "Nous améliorons continuellement nos services en fonction des retours, des besoins changeants et de l'évolution de l'expérience étudiante."
         }
+    },
+    "about_vision": {
+        "title_part1": "Notre vision est de transformer",
+        "title_part2": "votre expérience d'études à l'étranger",
+        "description": "Et de devenir la plateforme d'accompagnement la plus fiable et centrée sur l'étudiant pour les internationaux en France. Nous visons à faire des études à l'étranger un voyage bien guidé, sans stress et gratifiant. En proposant des ressources personnalisées, des conseils d'experts et une communauté de soutien, nous donnons aux étudiants les moyens de s'épanouir académiquement et personnellement dans leur nouvel environnement."
     }
 }

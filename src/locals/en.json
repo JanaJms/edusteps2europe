@@ -77,5 +77,10 @@
             "title": "Adaptability & Growth",
             "description": "We continuously improve our services based on feedback, changing needs, and the evolving student experience."
         }
+    },
+    "about_vision": {
+        "title_part1": "Our vision is to transform",
+        "title_part2": "your study abroad experience",
+        "description": "And become the most trusted, student-focused support platform for international students in France. We aim to make studying abroad a well-guided, stress-free, and rewarding journey. By offering personalized resources, expert guidance, and a supportive community, we empower students to thrive academically and personally in their new environment."
     }
 }
