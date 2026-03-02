@@ -1,4 +1,4 @@
-export function chatOnWhatsapp({ message }) {
+export function chatOnWhatsapp(message) {
     if (typeof window === "undefined") return;
 
     const encodedMessage = message ? encodeURIComponent(message) : ''

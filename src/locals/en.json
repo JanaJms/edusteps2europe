@@ -8,14 +8,15 @@
         "nav_faq": "FAQ",
         "nav_book": "Book a free Call",
         "copyright": "© 2025 EDUSTEPS2EUROPE. All rights reserved.",
-        "designer": "Designed with care for future global students 🌍"
+        "designer": "Designed with care for future global students 🌍",
+        "wtsp":"Hello, I want to book a free call"
     },
     "nav": {
         "home": "Home",
         "about": "About",
         "packages": "Packages",
         "services": "Services",
-        "accommodations": "Accommodations",
+        "accommodations": "Appartements",
         "faq": "FAQ",
         "contact": "Contact"
     },

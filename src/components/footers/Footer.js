@@ -47,7 +47,7 @@ export default function Footer() {
               <a href="/faq" className="text-black-metal/70 hover:text-orange transition-colors">
                 {t('footer.nav_faq')}
               </a>
-              <a onClick={() => chatOnWhatsapp()} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">
+              <a onClick={() => chatOnWhatsapp(t('footer.wtsp'))} className="text-black-metal/70 hover:text-orange transition-colors cursor-pointer">
                 {t('footer.nav_book')}
               </a>
             </div>

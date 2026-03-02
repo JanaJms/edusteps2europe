@@ -8,7 +8,8 @@
         "nav_faq": "FAQ",
         "nav_book": "Prendre RDV",
         "copyright": "© 2025 EDUSTEPS2EUROPE. Tous droits réservés.",
-        "designer": "Conçu avec soin pour les futurs étudiants internationaux 🌍"
+        "designer": "Conçu avec soin pour les futurs étudiants internationaux 🌍",
+        "wtsp": "Bonjour, je souhaite réserver un appel gratuit"
     },
     "nav": {
         "home": "Accueil",
@@ -505,7 +506,7 @@
     },
     "why_us": {
         "title": "Pourquoi choisir EDUSTEPS2EUROPE ?",
-        "subtitle": "Nous vous aidons à identifier la bonne université et le bon programme, vous guidons dans vos candidatures et vous assistons pour le logement, l'assurance et les autres essentiels.",
+        "subtitle": "Nous vous aidons à identifier l’université et le programme adaptés, vous accompagnons dans le processus de candidature et vous assistons pour le logement, l’assurance et les autres démarches essentielles.",
         "footer_text": "Nous proposons un accompagnement complet conçu spécifiquement pour les étudiants souhaitant étudier en France – du moment où vous rêvez de partir à l'étranger, jusqu'à votre arrivée et tout au long de votre première année cruciale.",
         "cards": {
             "c1": {
@@ -551,7 +552,7 @@
     "journey": {
         "hero_title": "Votre parcours d'études en France – rendu simple",
         "hero_subtitle": "Nous avons conçu un processus étape par étape pour rendre votre transition vers la France fluide et sans stress.",
-        "section_label": "Comment ça marche",
+        "section_label": "Comment ça fonctionne",
         "step_prefix": "Étape",
         "steps": {
             "s1": {
@@ -593,7 +594,7 @@
         "title_highlight": "avenir meilleur",
         "title_part2": "en France",
         "btn_consult": "Réserver une consultation gratuite",
-        "btn_how": "Comment ça marche",
+        "btn_how": "Comment ça fonctionne",
         "lead_magnet": "La première étape commence ici – Téléchargez votre guide gratuit",
         "img_alt": "Études en France"
     },
