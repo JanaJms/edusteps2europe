@@ -39,27 +39,17 @@ const Packages = () => {
         {
             title: t('packages.specialized.university.title'),
             icon: <School className="text-orange" size={32} />,
-            tiers: [
-                { label: "Essential", price: "50€", detail: t('packages.specialized.university.t1') },
-                { label: "Comfort", price: "70€", detail: t('packages.specialized.university.t2') },
-                { label: "Premium", price: "100€", detail: t('packages.specialized.university.t3') }
-            ]
+            tiers: t('packages.specialized.university.tiers', { returnObjects: true })
         },
         {
             title: t('packages.specialized.housing.title'),
             icon: <Home className="text-orange" size={32} />,
-            tiers: [
-                { label: "Essential", price: "50€", detail: t('packages.specialized.housing.t1') },
-                { label: "Premium", price: "100€", detail: t('packages.specialized.housing.t2') }
-            ]
+            tiers: t('packages.specialized.housing.tiers', { returnObjects: true })
         },
         {
             title: t('packages.specialized.banking.title'),
             icon: <Landmark className="text-orange" size={32} />,
-            tiers: [
-                { label: "Essential", price: "70€", detail: t('packages.specialized.banking.t1') },
-                { label: "Premium", price: "150€", detail: t('packages.specialized.banking.t2') }
-            ]
+            tiers: t('packages.specialized.banking.tiers', { returnObjects: true })
         }
     ];
 
@@ -73,9 +63,14 @@ const Packages = () => {
                         {t('packages.intro.title')}
                     </h1>
                     <div className="text-lg text-gray-600 max-w-3xl mx-auto font-poppins">
-                        <Trans i18nKey="packages.intro.description">
-                            Managing your arrival... With <span className="text-orange font-bold">EduSteps2Europe</span>...
-                        </Trans>
+                        import {Trans} from "react-i18next";
+
+                        <Trans
+                            i18nKey="packages.intro.description"
+                            components={{
+                                highlight: <span className="text-orange font-bold" />
+                            }}
+                        />
                     </div>
                     <div className="mt-8 inline-block bg-orange/10 text-orange px-6 py-2 rounded-full font-semibold">
                         {t('packages.intro.badge')}
@@ -152,7 +147,7 @@ const Packages = () => {
                                     <p className="font-bold">{t('packages.alacarte.translation')}</p>
                                     <p className="text-sm text-gray-400">{t('packages.alacarte.translation_desc')}</p>
                                 </div>
-                                <span className="text-orange font-bold">10% fee</span>
+                                <span className="text-orange font-bold">{t('packages.alacarte.fee')}</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <div>
@@ -176,9 +171,12 @@ const Packages = () => {
                                 <MessageCircle /> {t('packages.whatsapp_card.title')}
                             </h3>
                             <div className="mb-6 text-lg leading-relaxed font-poppins">
-                                <Trans i18nKey="packages.whatsapp_card.description">
-                                    Need a quick answer for <strong>Doctolib</strong>, <strong>Ameli</strong>...
-                                </Trans>
+                                <Trans
+                                    i18nKey="packages.whatsapp_card.description"
+                                    components={{
+                                        bold: <strong />
+                                    }}
+                                />
                             </div>
                             <div className="bg-white/10 p-4 rounded-2xl mb-6">
                                 <p className="font-bold text-lg">
@@ -206,12 +204,12 @@ const Packages = () => {
                     </h3>
                     <div className="grid md:grid-cols-2 gap-8 text-sm leading-relaxed text-gray-600 font-poppins">
                         <div className="space-y-4">
-                            <p><Trans i18nKey="packages.info.p1">... pay the <strong>CVEC</strong>, register with the <strong>CROUS</strong>...</Trans></p>
-                            <p><Trans i18nKey="packages.info.p2">... <strong>Minors:</strong> No specific steps...</Trans></p>
-                            <p><Trans i18nKey="packages.info.p3">... <strong>Adults:</strong> validate your VLS-TS...</Trans></p>
+                            <p><Trans i18nKey="packages.info.p1"><strong>CVEC</strong><strong>CROUS</strong>...</Trans></p>
+                            <p><Trans i18nKey="packages.info.p2"><strong>Minors:</strong></Trans></p>
+                            <p><Trans i18nKey="packages.info.p3"><strong>Adults:</strong></Trans></p>
                         </div>
                         <div className="space-y-4">
-                            <p><Trans i18nKey="packages.info.p4">... <strong>Social Security:</strong> etranger.ameli.fr ...</Trans></p>
+                            <p><Trans i18nKey="packages.info.p4"><strong>Social Security:</strong></Trans></p>
                             <p className="italic bg-white p-4 rounded-xl border border-gray-100">
                                 {t('packages.info.disclaimer')}
                             </p>

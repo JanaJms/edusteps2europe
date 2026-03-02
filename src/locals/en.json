@@ -385,7 +385,7 @@
     "packages": {
         "intro": {
             "title": "Our Support Packages",
-            "description": "Managing your arrival in Europe can be overwhelming. With <0>EduSteps2Europe</0>, receive high-quality, professional support to secure your administrative journey.",
+            "description": "Managing your arrival in Europe can be overwhelming. With <highlight>EduSteps2Europe</highlight>, receive high-quality, professional support to secure your administrative journey.",
             "badge": "First Year Rate • 100€ per additional year"
         },
         "main": {
@@ -426,19 +426,53 @@
             "title": "Specialized Services",
             "university": {
                 "title": "University Search",
-                "t1": "List of 5 schools + links + admission requirements",
-                "t2": "Comparative synthesis (Program, costs, reputation)",
-                "t3": "Admission strategy + application calendar + sample files"
+                "tiers": [
+                    {
+                        "label": "Essential",
+                        "price": "50€",
+                        "detail": "List of 5 schools + links + admission requirements"
+                    },
+                    {
+                        "label": "Comfort",
+                        "price": "70€",
+                        "detail": "Comparative synthesis (Program, costs, reputation)"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "100€",
+                        "detail": "Admission strategy + application calendar + sample files"
+                    }
+                ]
             },
             "housing": {
                 "title": "Student Housing",
-                "t1": "5 to 8 residences + links + application tips",
-                "t2": "Direct contact with options + viewing assistance + follow-up"
+                "tiers": [
+                    {
+                        "label": "Essential",
+                        "price": "50€",
+                        "detail": "5 to 8 residences + links + application tips"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "100€",
+                        "detail": "Direct contact with options + viewing assistance + follow-up"
+                    }
+                ]
             },
             "banking": {
                 "title": "Banking Setup",
-                "t1": "List of suitable banks + detailed account opening guide",
-                "t2": "Direct bank contact + trilingual support (FR/ENG/AR) + full follow-up"
+                "tiers": [
+                    {
+                        "label": "Essential",
+                        "price": "70€",
+                        "detail": "List of suitable banks + detailed account opening guide"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "150€",
+                        "detail": "Direct bank contact + trilingual support (FR/ENG/AR) + full follow-up"
+                    }
+                ]
             }
         },
         "alacarte": {
@@ -450,14 +484,15 @@
             "taxi": "Airport Pickup (Taxi)",
             "taxi_desc": "Booking and greeting service",
             "btn": "Inquire for Service",
-            "wa_msg": "I want to inquire for an A La Carte service"
+            "wa_msg": "I want to inquire for an A La Carte service",
+            "fee": "10% fee"
         },
         "whatsapp_card": {
             "title": "24/7 WhatsApp Support",
-            "description": "Need a quick answer for <0>Doctolib</0>, <1>Ameli</1>, or an urgent administrative question? Get direct, instant access to our expert team.",
             "promo_title": "FREE with \"Peace of Mind\" Package",
             "promo_subtitle": "Custom rates apply for individual questions on other plans.",
-            "btn": "Chat with an Expert Now"
+            "btn": "Chat with an Expert Now",
+            "description": "Need a quick answer for <bold>Doctolib</bold>, <bold>Ameli</bold>, or an urgent administrative question? Get direct, instant access to our expert team."
         },
         "info": {
             "title": "Essential Information",

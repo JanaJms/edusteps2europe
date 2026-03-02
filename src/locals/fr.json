@@ -385,7 +385,7 @@
     "packages": {
         "intro": {
             "title": "Nos Formules d'Accompagnement",
-            "description": "Gérer votre arrivée en Europe peut être complexe. Avec <0>EduSteps2Europe</0>, bénéficiez d'un soutien professionnel de haute qualité pour sécuriser vos démarches.",
+            "description": "Gérer votre arrivée en Europe peut être complexe. Avec <highlight>EduSteps2Europe</highlight>, bénéficiez d’un accompagnement professionnel de haute qualité pour sécuriser votre parcours administratif.",
             "badge": "Tarif 1ère année • 100€ par année supplémentaire"
         },
         "main": {
@@ -423,22 +423,56 @@
             }
         },
         "specialized": {
-            "title": "Services Spécialisés",
+            "title": "Services spécialisés",
             "university": {
-                "title": "Recherche d'Université",
-                "t1": "Liste de 5 écoles + liens + conditions d'admission",
-                "t2": "Synthèse comparative (Programme, coûts, réputation)",
-                "t3": "Stratégie d'admission + calendrier + dossier type"
+                "title": "Recherche d’université",
+                "tiers": [
+                    {
+                        "label": "Essentiel",
+                        "price": "50€",
+                        "detail": "Liste de 5 établissements + liens + conditions d’admission"
+                    },
+                    {
+                        "label": "Confort",
+                        "price": "70€",
+                        "detail": "Synthèse comparative (Programme, coûts, réputation)"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "100€",
+                        "detail": "Stratégie d’admission + calendrier de candidature + exemples de dossiers"
+                    }
+                ]
             },
             "housing": {
-                "title": "Logement Étudiant",
-                "t1": "5 à 8 résidences + liens + conseils candidature",
-                "t2": "Contact direct + aide aux visites + suivi"
+                "title": "Logement étudiant",
+                "tiers": [
+                    {
+                        "label": "Essentiel",
+                        "price": "50€",
+                        "detail": "5 à 8 résidences + liens + conseils pour la candidature"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "100€",
+                        "detail": "Contact direct avec les options + assistance pour les visites + suivi complet"
+                    }
+                ]
             },
             "banking": {
-                "title": "Compte Bancaire",
-                "t1": "Liste des banques + guide détaillé d'ouverture",
-                "t2": "Contact banque + support trilingue (FR/EN/AR) + suivi complet"
+                "title": "Ouverture de compte bancaire",
+                "tiers": [
+                    {
+                        "label": "Essentiel",
+                        "price": "70€",
+                        "detail": "Liste de banques adaptées + guide détaillé d’ouverture de compte"
+                    },
+                    {
+                        "label": "Premium",
+                        "price": "150€",
+                        "detail": "Contact direct avec la banque + accompagnement trilingue (FR/ENG/AR) + suivi complet"
+                    }
+                ]
             }
         },
         "alacarte": {
@@ -450,20 +484,21 @@
             "taxi": "Accueil Aéroport (Taxi)",
             "taxi_desc": "Service de réservation et d'accueil",
             "btn": "Demander un service",
-            "wa_msg": "Je souhaite me renseigner sur un service à la carte"
+            "wa_msg": "Je souhaite me renseigner sur un service à la carte",
+            "fee": "Frais de 10 %"
         },
         "whatsapp_card": {
             "title": "Support WhatsApp 7J/7",
-            "description": "Besoin d'une réponse rapide pour <0>Doctolib</0>, <1>Ameli</1>, ou une question urgente ? Accédez directement à nos experts.",
             "promo_title": "OFFERT avec la formule \"Esprit Tranquille\"",
             "promo_subtitle": "Tarifs personnalisés pour les questions isolées sur les autres formules.",
-            "btn": "Discuter avec un expert"
+            "btn": "Discuter avec un expert",
+            "description": "Besoin d’une réponse rapide concernant <bold>Doctolib</bold>, <bold>Ameli</bold> ou une question administrative urgente ? Accédez directement et instantanément à notre équipe d’experts."
         },
         "info": {
             "title": "Informations Essentielles",
             "p1": "• À votre arrivée en France, vous devez payer la <0>CVEC</0>, vous inscrire au <1>CROUS</1> et souscrire une assurance responsabilité civile.",
             "p2": "• <0>Mineurs :</0> Aucune démarche spécifique pour le visa étudiant.",
-            "p3": "• <0>Majeurs :</0> Vous avez 2 mois pour valider votre visa VLS-TS après votre arrivée.",
+            "p3": "• <0>Adultes :</0> Vous avez 2 mois pour valider votre visa VLS-TS après votre arrivée.",
             "p4": "• <0>Sécurité Sociale :</0> L'inscription sur <1>etranger.ameli.fr</1> est obligatoire pour les remboursements et les aides CAF.",
             "disclaimer": "Note : EduSteps2Europe n'est pas responsable des refus administratifs (ex : refus de visa)."
         }
