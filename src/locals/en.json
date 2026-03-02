@@ -533,5 +533,19 @@
                 "text": "From opening a bank account to renewing your residence permit, we stay by your side during your most critical adjustment period."
             }
         }
+    },
+    "success": {
+        "title_1": "Your Child’s",
+        "highlight": "Success",
+        "title_2": "Starts with the Right Support",
+        "description": "From the moment they land at the airport to opening a bank account, getting their visa validated, and feeling settled in a new city — we handle the details so you can focus on their future, not the paperwork.",
+        "btn_consult": "Book Free Consultation",
+        "link_custom": "Or Request a Custom Package",
+        "wa_message": "Hello! I would like to book a free consultation.",
+        "cards": {
+            "consult": "Free Consultation & Profile Evaluation",
+            "checklist": "Downloadable student checklist",
+            "budgeting": "French life budgeting templates"
+        }
     }
 }

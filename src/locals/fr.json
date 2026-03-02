@@ -533,5 +533,19 @@
                 "text": "De l'ouverture d'un compte bancaire au renouvellement de votre titre de séjour, nous restons à vos côtés durant votre période d'adaptation la plus critique."
             }
         }
+    },
+    "success": {
+        "title_1": "Le succès de",
+        "highlight": "votre enfant",
+        "title_2": "commence par le bon accompagnement",
+        "description": "De l'arrivée à l'aéroport à l'ouverture du compte bancaire, en passant par la validation du visa — nous gérons les détails pour que vous puissiez vous concentrer sur leur avenir.",
+        "btn_consult": "Réserver une consultation gratuite",
+        "link_custom": "Ou demander une formule personnalisée",
+        "wa_message": "Bonjour ! Je souhaite réserver une consultation gratuite.",
+        "cards": {
+            "consult": "Consultation gratuite et évaluation de profil",
+            "checklist": "Check-list étudiant téléchargeable",
+            "budgeting": "Modèles de budget pour la vie en France"
+        }
     }
 }
