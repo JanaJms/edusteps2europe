@@ -587,5 +587,14 @@
                 "subtitle": "Need help with French documents, local appointments, or simply adjusting to life in France? We're just a message away throughout your first year."
             }
         }
+    },
+    "hero": {
+        "title_part1": "Bring Your Child Closer to a",
+        "title_highlight": "Brighter Future",
+        "title_part2": "in France",
+        "btn_consult": "Book Free Consultation",
+        "btn_how": "See How It Works",
+        "lead_magnet": "The First Step Starts Here – Download Your Free Guide",
+        "img_alt": "Education in France"
     }
 }

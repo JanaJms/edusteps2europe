@@ -587,5 +587,14 @@
                 "subtitle": "Besoin d'aide avec des documents français ou simplement pour s'adapter ? Nous sommes à un message de distance tout au long de votre première année."
             }
         }
+    },
+    "hero": {
+        "title_part1": "Rapprochez votre enfant d'un",
+        "title_highlight": "avenir meilleur",
+        "title_part2": "en France",
+        "btn_consult": "Réserver une consultation gratuite",
+        "btn_how": "Comment ça marche",
+        "lead_magnet": "La première étape commence ici – Téléchargez votre guide gratuit",
+        "img_alt": "Études en France"
     }
 }
