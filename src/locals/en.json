@@ -502,5 +502,36 @@
             "p4": "• <0>Social Security:</0> Registration on <1>etranger.ameli.fr</1> is mandatory for healthcare reimbursements and CAF housing benefits.",
             "disclaimer": "Disclaimer: EduSteps2Europe is not responsible for administrative rejections (e.g., visa refusal)."
         }
+    },
+    "why_us": {
+        "title": "Why choose EDUSTEPS2EUROPE?",
+        "subtitle": "We help you identify the right university and program, guide you through the application process, and assist with housing, insurance, and other essentials.",
+        "footer_text": "We offer comprehensive support tailored specifically for students who want to study in France – from the moment you dream of studying abroad, through your arrival, and throughout your crucial first year.",
+        "cards": {
+            "c1": {
+                "title": "Complete Guidance – From A to Z",
+                "text": "We help you identify the right university and program, guide you through the application process, and assist with housing, insurance, and other essentials."
+            },
+            "c2": {
+                "title": "On-the-Ground Support in France",
+                "text": "You’re not alone. We are here to support you once you land in France—airport pickup, city orientation, settling in, and much more."
+            },
+            "c3": {
+                "title": "Expertise in French Systems",
+                "text": "From visas and OFII appointments to university registration and CAF applications, we simplify every administrative process so you can focus on your studies."
+            },
+            "c4": {
+                "title": "Local Knowledge, Personal Touch",
+                "text": "Our team is made up of professionals and former students who’ve been in your shoes. We know what it takes to succeed and feel at home in France."
+            },
+            "c5": {
+                "title": "Affordable & Transparent Services",
+                "text": "No hidden fees. Just practical, honest help tailored to your budget and needs."
+            },
+            "c6": {
+                "title": "Support Throughout Your First Year",
+                "text": "From opening a bank account to renewing your residence permit, we stay by your side during your most critical adjustment period."
+            }
+        }
     }
 }

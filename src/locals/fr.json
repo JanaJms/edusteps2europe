@@ -502,5 +502,36 @@
             "p4": "• <0>Sécurité Sociale :</0> L'inscription sur <1>etranger.ameli.fr</1> est obligatoire pour les remboursements et les aides CAF.",
             "disclaimer": "Note : EduSteps2Europe n'est pas responsable des refus administratifs (ex : refus de visa)."
         }
+    },
+    "why_us": {
+        "title": "Pourquoi choisir EDUSTEPS2EUROPE ?",
+        "subtitle": "Nous vous aidons à identifier la bonne université et le bon programme, vous guidons dans vos candidatures et vous assistons pour le logement, l'assurance et les autres essentiels.",
+        "footer_text": "Nous proposons un accompagnement complet conçu spécifiquement pour les étudiants souhaitant étudier en France – du moment où vous rêvez de partir à l'étranger, jusqu'à votre arrivée et tout au long de votre première année cruciale.",
+        "cards": {
+            "c1": {
+                "title": "Accompagnement Complet – De A à Z",
+                "text": "Nous vous aidons à identifier la bonne université et le bon programme, vous guidons tout au long du processus de candidature et vous aidons pour le logement et les assurances."
+            },
+            "c2": {
+                "title": "Soutien sur le terrain en France",
+                "text": "Vous n'êtes pas seul. Nous sommes là pour vous soutenir dès votre arrivée en France : accueil aéroport, orientation en ville, installation, et bien plus."
+            },
+            "c3": {
+                "title": "Expertise des systèmes français",
+                "text": "Des visas aux rendez-vous OFII, de l'inscription universitaire aux demandes CAF, nous simplifions chaque processus administratif pour que vous puissiez vous concentrer sur vos études."
+            },
+            "c4": {
+                "title": "Savoir local, touche personnelle",
+                "text": "Notre équipe est composée de professionnels et d'anciens étudiants qui ont été à votre place. Nous savons ce qu'il faut pour réussir et se sentir chez soi en France."
+            },
+            "c5": {
+                "title": "Services abordables et transparents",
+                "text": "Pas de frais cachés. Juste une aide pratique et honnête adaptée à votre budget et à vos besoins."
+            },
+            "c6": {
+                "title": "Soutien durant votre première année",
+                "text": "De l'ouverture d'un compte bancaire au renouvellement de votre titre de séjour, nous restons à vos côtés durant votre période d'adaptation la plus critique."
+            }
+        }
     }
 }
