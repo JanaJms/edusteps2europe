@@ -601,5 +601,13 @@
         "title": "Download our FREE guide",
         "description": "Everything you need to help your child succeed — timelines, visa steps, housing tips, and more in one easy-to-follow guide",
         "img_alt": "Guide decoration"
+    },
+    "book_call": {
+        "badge": "Available for a 15-min chat",
+        "title_p1": "Book a Free Call with",
+        "title_p2": "Our Experts",
+        "btn": "Get Started Now",
+        "img_alt": "Expert Consultation",
+        "wa_msg": "Hello! I would like to book a free 15-minute call with an expert."
     }
 }

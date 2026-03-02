@@ -601,5 +601,13 @@
         "title": "Téléchargez notre guide GRATUIT",
         "description": "Tout ce dont vous avez besoin pour aider votre enfant à réussir — calendriers, étapes de visa, conseils de logement, et plus encore dans un guide facile à suivre",
         "img_alt": "Décoration guide"
+    },
+    "book_call": {
+        "badge": "Disponible pour un appel de 15 min",
+        "title_p1": "Prenez un appel gratuit avec",
+        "title_p2": "Nos Experts",
+        "btn": "Commencer maintenant",
+        "img_alt": "Consultation d'expert",
+        "wa_msg": "Bonjour ! Je souhaite réserver un appel gratuit de 15 minutes avec un expert."
     }
 }
