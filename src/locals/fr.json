@@ -547,5 +547,45 @@
             "checklist": "Check-list étudiant téléchargeable",
             "budgeting": "Modèles de budget pour la vie en France"
         }
+    },
+    "journey": {
+        "hero_title": "Votre parcours d'études en France – rendu simple",
+        "hero_subtitle": "Nous avons conçu un processus étape par étape pour rendre votre transition vers la France fluide et sans stress.",
+        "section_label": "Comment ça marche",
+        "step_prefix": "Étape",
+        "steps": {
+            "s1": {
+                "title": "Consultation gratuite et évaluation de profil",
+                "subtitle": "Nous commençons par comprendre vos objectifs académiques et vos préférences. Sur cette base, nous vous conseillons sur les universités et programmes adaptés en France."
+            },
+            "s2": {
+                "title": "Sélection d'université et de programme",
+                "subtitle": "Nous vous guidons dans le choix des meilleures universités et vous aidons à préparer et soumettre vos candidatures (CV, lettre de motivation et documents requis)."
+            },
+            "s3": {
+                "title": "Aide au visa et documentation",
+                "subtitle": "Une fois accepté, nous vous aidons pour le visa étudiant, les procédures Campus France et tous les documents nécessaires – sans stress, en toute clarté."
+            },
+            "s4": {
+                "title": "Recherche de logement",
+                "subtitle": "Nous vous aidons à trouver un logement étudiant sûr et abordable – même avant votre arrivée. Nous vous guidons aussi pour les contrats et les aides CAF."
+            },
+            "s5": {
+                "title": "Préparation avant le départ",
+                "subtitle": "Nous fournissons une check-list pour vos bagages, des conseils culturels et des infos clés sur la vie en France. Options : accueil aéroport, carte SIM et transports."
+            },
+            "s6": {
+                "title": "Soutien à l'arrivée et première semaine",
+                "subtitle": "À votre arrivée, nous vous accueillons et vous aidons à vous installer. Nous vous assistons aussi pour l'ouverture de compte bancaire et l'orientation initiale."
+            },
+            "s7": {
+                "title": "Support administratif en France",
+                "subtitle": "Nous continuons à vous aider pour les tâches critiques comme les rendez-vous OFII, l'inscription CPAM, la validation du titre de séjour et l'inscription universitaire."
+            },
+            "s8": {
+                "title": "Soutien continu première année",
+                "subtitle": "Besoin d'aide avec des documents français ou simplement pour s'adapter ? Nous sommes à un message de distance tout au long de votre première année."
+            }
+        }
     }
 }
