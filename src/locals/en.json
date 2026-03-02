@@ -596,5 +596,10 @@
         "btn_how": "See How It Works",
         "lead_magnet": "The First Step Starts Here – Download Your Free Guide",
         "img_alt": "Education in France"
+    },
+    "download_guide": {
+        "title": "Download our FREE guide",
+        "description": "Everything you need to help your child succeed — timelines, visa steps, housing tips, and more in one easy-to-follow guide",
+        "img_alt": "Guide decoration"
     }
 }

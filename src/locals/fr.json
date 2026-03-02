@@ -596,5 +596,10 @@
         "btn_how": "Comment ça marche",
         "lead_magnet": "La première étape commence ici – Téléchargez votre guide gratuit",
         "img_alt": "Études en France"
+    },
+    "download_guide": {
+        "title": "Téléchargez notre guide GRATUIT",
+        "description": "Tout ce dont vous avez besoin pour aider votre enfant à réussir — calendriers, étapes de visa, conseils de logement, et plus encore dans un guide facile à suivre",
+        "img_alt": "Décoration guide"
     }
 }
