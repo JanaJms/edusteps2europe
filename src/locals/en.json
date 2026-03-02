@@ -16,7 +16,7 @@
         "about": "About",
         "packages": "Packages",
         "services": "Services",
-        "accommodations": "Appartements",
+        "accommodations": "Accommodations",
         "faq": "FAQ",
         "contact": "Contact"
     },
@@ -220,7 +220,7 @@
         "badge": "Premium Student Living",
         "title_main": "Your perfect home",
         "title_highlight": "away from home.",
-        "description": "Discover hand-picked student accomodations across Europe, designed for comfort, study, and community.",
+        "description": "Discover hand-picked student accommodations across Europe, designed for comfort, study, and community.",
         "notice_title": "Important Notice",
         "notice_text": "Rentals are facilitated through",
         "notice_cta": "Contact us to arrange viewings.",
