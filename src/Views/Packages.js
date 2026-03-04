@@ -63,8 +63,6 @@ const Packages = () => {
                         {t('packages.intro.title')}
                     </h1>
                     <div className="text-lg text-gray-600 max-w-3xl mx-auto font-poppins">
-                        import {Trans} from "react-i18next";
-
                         <Trans
                             i18nKey="packages.intro.description"
                             components={{
