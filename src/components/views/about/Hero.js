@@ -23,10 +23,10 @@ export default function Hero() {
 
                 {/* Text content */}
                 <div className="relative z-10 text-center flex flex-col gap-6 md:gap-10 px-6 md:px-16 max-w-4xl pt-10 pb-20">
-                    <h1 className="text-3xl md:text-5xl font-bold font-playfair drop-shadow-md">
+                    <h1 className="text-[15px] md:text-5xl font-bold font-playfair drop-shadow-md">
                         {t('about_hero.title')}
                     </h1>
-                    <div className="text-base md:text-xl leading-relaxed drop-shadow-sm font-poppins max-w-2xl mx-auto">
+                    <div className="text-[12px] md:text-xl leading-relaxed drop-shadow-sm font-poppins max-w-2xl mx-auto">
                         <p>
                             {t('about_hero.description')}
                         </p>
